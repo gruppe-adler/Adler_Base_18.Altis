@@ -1,4 +1,4 @@
-params [["_sleepTime",5]]
+params [["_sleepTime",5]];
 
 if (!hasInterface) exitWith {};
 
