@@ -47,6 +47,28 @@ class grad_adlerBase_manualRscVignette: grad_adlerBase_manualRscPicture {
 	colortext[]={0,0,0,0.30000001};
 };
 
+class grad_adlerBase_manualRscStructuredText {
+	idc = -1;
+	type = CT_STRUCTURED_TEXT;
+	style = ST_LEFT;
+	colorBackground[] = {1,1,1,0};
+	x = 0.1;
+	y = 0.1;
+	w = 0.3;
+	h = 0.1;
+	size = 0.018;
+	text = "";
+	class Attributes {
+		font = "TahomaB";
+		color = "#ffffff";
+		align = "left";
+		valign = "middle";
+		shadow = false;
+		shadowColor = "#ff0000";
+		size = "2.4";
+	};
+};
+
 class grad_adlerBase_manualRscButton {
 	idc = -1;
 	access = 0;
@@ -176,24 +198,52 @@ class grad_adlerBase_manualListBox {
 	};
 };
 
-class grad_adlerBase_manualRscStructuredText {
+class grad_adlerBase_manualRscControlsGroupNoHScrollbar {
+	deletable = 0;
+	fade = 0;
+	h = 1;
 	idc = -1;
-	type = CT_STRUCTURED_TEXT;  // defined constant
-	style = ST_LEFT;            // defined constant
-	colorBackground[] = {1,1,1,0};
-	x = 0.1;
-	y = 0.1;
-	w = 0.3;
-	h = 0.1;
-	size = 0.018;
-	text = "";
-	class Attributes {
-		font = "TahomaB";
-		color = "#ffffff";
-		align = "left";
-		valign = "middle";
-		shadow = false;
-		shadowColor = "#ff0000";
-		size = "2.4";
+	shadow = 0;
+	style = 16;
+	type = 15;
+	w = 1;
+	x = 0;
+	y = 0;
+
+	class Controls {};
+	class HScrollbar {
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+		autoScrollDelay = 5;
+		autoScrollEnabled = 0;
+		autoScrollRewind = 0;
+		autoScrollSpeed = -1;
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+		color[] = {1,1,1,1};
+		colorActive[] = {1,1,1,1};
+		colorDisabled[] = {1,1,1,0.3};
+		height = 0;
+		scrollSpeed = 0.06;
+		shadow = 0;
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+		width = 0;
+	};
+
+	class VScrollbar {
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+		autoScrollDelay = 5;
+		autoScrollEnabled = 1;
+		autoScrollRewind = 0;
+		autoScrollSpeed = -1;
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+		color[] = {1,1,1,1};
+		colorActive[] = {1,1,1,1};
+		colorDisabled[] = {1,1,1,0.3};
+		height = 0;
+		scrollSpeed = 0.06;
+		shadow = 0;
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+		width = 0.021;
 	};
 };

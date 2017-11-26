@@ -42,11 +42,11 @@
 #define grad_adlerBase_manualListY                  (grad_adlerBase_manualListBGY + grad_adlerBase_manualPaddingY)
 
 #define grad_adlerBase_manualContentBGX             (grad_adlerBase_manualListBGX + grad_adlerBase_manualListBGW + grad_adlerBase_manualElementSpacingX)
-#define grad_adlerBase_manualContentX               (grad_adlerBase_manualContentBGX + grad_adlerBase_manualPaddingX)
+#define grad_adlerBase_manualContentX               (grad_adlerBase_manualPaddingX)
 #define grad_adlerBase_manualContentBGY             (grad_adlerBase_manualListBGY)
-#define grad_adlerBase_manualContentY               (grad_adlerBase_manualListY)
+#define grad_adlerBase_manualContentY               (grad_adlerBase_manualPaddingY)
 
-#define grad_adlerBase_manualContentTextY           (grad_adlerBase_manualContentBGY + grad_adlerBase_manualContentTitleH)
+#define grad_adlerBase_manualContentTextY           (grad_adlerBase_manualContentTitleH)
 #define grad_adlerBase_manualContentTextH           (grad_adlerBase_manualContentH - grad_adlerBase_manualContentTitleH)
 
 #define grad_adlerBase_manualCloseButtonX           (grad_adlerBase_manualTotalX + grad_adlerBase_manualTotalW - grad_adlerBase_manualButtonW)

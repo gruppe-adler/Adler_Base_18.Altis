@@ -101,30 +101,41 @@ class grad_adlerBase_rscDisplayManual {
             h = grad_adlerBase_manualContentH;
         };
 
-        class contentTitle: grad_adlerBase_manualRscStructuredText {
-            idc = GRAD_ADLERBASE_MANUALIDCCONTENTTITLE;
+        class contentControlsGroup: grad_adlerBase_manualRscControlsGroupNoHScrollbar {
+            idc = -1;
 
-            x = grad_adlerBase_manualContentX;
-            y = grad_adlerBase_manualContentY;
-            w = grad_adlerBase_manualContentW;
-            h = grad_adlerBase_manualContentTitleH;
+            x = grad_adlerBase_manualContentBGX;
+            y = grad_adlerBase_manualContentBGY;
+            w = grad_adlerBase_manualContentBGW;
+            h = grad_adlerBase_manualContentBGH;
 
-            class Attributes: Attributes {
-                font = "PuristaLight";
-                size = "4.0";
-            };
-        };
+            class Controls {
+                class contentTitle: grad_adlerBase_manualRscStructuredText {
+                    idc = GRAD_ADLERBASE_MANUALIDCCONTENTTITLE;
 
-        class contentText: grad_adlerBase_manualRscStructuredText {
-            idc = GRAD_ADLERBASE_MANUALIDCCONTENT;
+                    x = grad_adlerBase_manualContentX;
+                    y = grad_adlerBase_manualContentY;
+                    w = grad_adlerBase_manualContentW;
+                    h = grad_adlerBase_manualContentTitleH;
 
-            x = grad_adlerBase_manualContentX;
-            y = grad_adlerBase_manualContentTextY;
-            w = grad_adlerBase_manualContentW;
-            h = grad_adlerBase_manualContentTextH;
+                    class Attributes: Attributes {
+                        font = "PuristaLight";
+                        size = "4.0";
+                    };
+                };
 
-            class Attributes: Attributes {
-                size = "2.2";
+                class contentText: grad_adlerBase_manualRscStructuredText {
+                    idc = GRAD_ADLERBASE_MANUALIDCCONTENT;
+
+                    x = grad_adlerBase_manualContentX;
+                    y = grad_adlerBase_manualContentTextY;
+                    w = grad_adlerBase_manualContentW;
+                    h = grad_adlerBase_manualContentTextH;
+
+                    class Attributes: Attributes {
+                        size = "2.2";
+                    };
+                };
             };
         };
     };
