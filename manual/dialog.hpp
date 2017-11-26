@@ -25,9 +25,11 @@ class grad_adlerBase_rscDisplayManual {
             text = "WILLKOMMEN BEI GRUPPE ADLER";
         };
 
-        class listBG: grad_adlerBase_manualRscBackground {
-            colorBackground[] = {0, 0, 0, 0.6};
+        class vignette: grad_adlerBase_manualRscVignette {
 
+        };
+
+        class listBG: grad_adlerBase_manualRscBackground {
             x = grad_adlerBase_manualListBGX;
             y = grad_adlerBase_manualListBGY;
             w = grad_adlerBase_manualListBGW;
@@ -35,8 +37,6 @@ class grad_adlerBase_rscDisplayManual {
         };
 
         class contentBG: grad_adlerBase_manualRscBackground {
-            colorBackground[] = {0, 0, 0, 0.6};
-
             x = grad_adlerBase_manualContentBGX;
             y = grad_adlerBase_manualContentBGY;
             w = grad_adlerBase_manualContentBGW;

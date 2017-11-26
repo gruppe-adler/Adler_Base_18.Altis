@@ -19,7 +19,32 @@ class grad_adlerBase_manualRscBackground {
 	font = "PuristaMedium";
 	sizeEx = 0.04 * TEXT_SCALE;
 	shadow = 0;
-	colorBackground[] = {0, 0, 0, 0.6};
+	colorBackground[] = {0, 0, 0, 0.70};
+};
+
+class grad_adlerBase_manualRscPicture {
+	access = 0;
+	type = CT_STATIC;
+	idc = -1;
+	style = ST_PICTURE;
+	colorBackground[] = {0,0,0,0};
+	colorText[] = {1,1,1,1};
+	font = "TahomaB";
+	sizeEx = 0;
+	lineSpacing = 0;
+	text = "";
+	fixedWidth = 0;
+	shadow = 0;
+};
+
+class grad_adlerBase_manualRscVignette: grad_adlerBase_manualRscPicture {
+	idc = -1;
+	x="safezoneXAbs";
+	y="safezoneY";
+	w="safezoneWAbs";
+	h="safezoneH";
+	text="\A3\ui_f\data\gui\rsccommon\rscvignette\vignette_gs.paa";
+	colortext[]={0,0,0,0.30000001};
 };
 
 class grad_adlerBase_manualRscButton {
