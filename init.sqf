@@ -42,7 +42,7 @@ nopop = true;      				// Alle Klappscheiben klappen nicht mehr von selbst hoch
 // Simmax Ende ************************************************************************
 
 
-
+[5] execVM "manual\manualInit.sqf"
 
 
 //Adler Intro
@@ -60,6 +60,3 @@ titleCut ["", "BLACK IN", 2];
 waitUntil {time > 3};
 	["<img size= '6' shadow='false' image='pics\gruppe-adler.paa'/><br/><t size='.9' color='#FFFFFF'>Willkommen in der Adler Base      </t>",0,0,3,4] spawn BIS_fnc_dynamicText;
 };
-
-
-

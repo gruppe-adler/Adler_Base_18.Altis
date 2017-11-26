@@ -11,6 +11,8 @@ respawnDialog = 0;
 respawnOnStart = 1;
 enableDebugConsole = 1;  // Admin only
 
+#include "manual\dialog.hpp"
+
 //GRAD Vehicle Spawner by McDiod
 
 #include "modules\grad-vehicleSpawner\grad_vehicleSpawner.hpp"
@@ -89,4 +91,3 @@ class CfgNotifications
       difficulty[] = {};
   };
 };
-
