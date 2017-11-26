@@ -16,6 +16,27 @@ enableDebugConsole = 1;  // Admin only
 #include "modules\grad-vehicleSpawner\grad_vehicleSpawner.hpp"
 
 
+// *****************        für Teleport-Board Anzeige Airborne
+class Extended_GetIn_EventHandlers {
+    class Air {
+        class grad_adlerBase_getInAirVehicle {
+            serverGetIn = "params ['','','_unit']; if (isPlayer _unit) then {grad_adlerBase_airVehicleUnits pushBack _unit; publicVariable 'grad_adlerBase_airVehicleUnits'};";
+        };
+    };
+};
+
+class Extended_GetOut_EventHandlers {
+    class Air {
+        class grad_adlerBase_getOutAirVehicle {
+            serverGetOut = "params ['','','_unit']; if (isPlayer _unit) then {grad_adlerBase_airVehicleUnits = grad_adlerBase_airVehicleUnits - [_unit]; publicVariable 'grad_adlerBase_airVehicleUnits'};";
+        };
+    };
+};
+// ***************** 
+
+
+
+
 class CfgGradVehicleSpawner {
     maxVehicles = 100;
     abandonedTime = 1500;
