@@ -1,6 +1,6 @@
 OnLoadMission = "";
 author="XiviD / Simmax für Gruppe Adler";  //appears as author in overview and loading screen
-overviewText="Danke auch an allen Mitwirkenden"; //appears in overview and loading screen
+overviewText="Danke auch an alle Mitwirkenden"; //appears in overview and loading screen
 onLoadName="Adler Base"; //mission name for loading screen only
 disabledAI = 1;
 overviewPicture="pics\intro_01.paa";
@@ -32,7 +32,7 @@ class Extended_GetOut_EventHandlers {
         };
     };
 };
-// ***************** 
+// *****************
 
 
 
