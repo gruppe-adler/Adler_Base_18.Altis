@@ -35,7 +35,7 @@ _simpleTarget = _this select 0;
         //create invisible sphere to act as a camera
         temp_PIPcam_Vehicle = createVehicle ["Sign_Sphere10cm_F", [0,0,0], [], 0, "CAN_COLLIDE"];
 		
-        //temp_PIPcam_Vehicle setObjectTexture [0,"#(argb,8,8,3)color(0,0,0,0)"];
+        temp_PIPcam_Vehicle setObjectTexture [0,"#(argb,8,8,3)color(0,0,0,0)"];
 
 		
         //position and attach sphere to simpleTarget
