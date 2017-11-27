@@ -1,14 +1,14 @@
 version=53;
 class EditorData
 {
-	moveGridStep=0.125;
+	moveGridStep=32;
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=514;
+	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=4924;
+		nextID=4936;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=217;
+		nextID=238;
 	};
 	class Camera
 	{
-		pos[]={14287.693,52.072113,16090.229};
-		dir[]={-0.39383861,-0.63041532,0.66897237};
-		up[]={-0.31983069,0.77625269,0.54326397};
-		aside[]={0.86177617,-1.5995465e-007,0.50734717};
+		pos[]={15144.508,45.074974,17192.08};
+		dir[]={-0.68927437,-0.45616823,0.56288862};
+		up[]={-0.35332817,0.88988394,0.28854135};
+		aside[]={0.63253087,-1.3122917e-007,0.77455366};
 	};
 };
 binarizationWanted=0;
@@ -159,7 +159,7 @@ class AddonsMetaData
 		{
 			className="cba_jr";
 			name="Community Base Addons - Joint Rails";
-			author="CBA Team";
+			author="CBA-Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item4
@@ -868,7 +868,7 @@ class Mission
 {
 	class Intel
 	{
-		overviewText="Adler Base zum Ausrüsten und  Waffen testen.";
+		overviewText="Virtual Arsenal zum Ausrüsten und  Waffen testen.";
 		startWeather=0.42999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -883,14 +883,14 @@ class Mission
 		year=2035;
 		month=6;
 		day=24;
-		hour=14;
+		hour=12;
 		minute=-22;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Entities
 	{
-		items=903;
+		items=909;
 		class Item0
 		{
 			dataType="Marker";
@@ -12568,7 +12568,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14583.769,18.951054,16034.695};
+				position[]={14583.683,18.951054,16034.616};
 				angles[]={0,0.79412478,0};
 			};
 			side="Empty";
@@ -12576,7 +12576,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; _spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
+				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0];" \n " _spr  setObjectTexture [0, ""#(rgb,8,8,3)color(1,0,0,1)""];" \n " _spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
 				name="lane_1";
 			};
 			id=3875;
@@ -12776,7 +12776,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; _spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
+				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; " \n " _spr  setObjectTexture [0, ""#(rgb,8,8,3)color(1,0,0,1)""];" \n "_spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
 				name="lane_2";
 			};
 			id=3878;
@@ -12935,7 +12935,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; _spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
+				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; " \n " _spr  setObjectTexture [0, ""#(rgb,8,8,3)color(1,0,0,1)""];" \n "_spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
 				name="lane_3";
 			};
 			id=3880;
@@ -13094,7 +13094,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; _spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
+				init="call{this setpos [getpos this select 0, getpos this select 1, 0]; this setvectorup [0,0,1]; ary=[];this addEventHandler [""HitPart"", {_spr = ""Sign_Sphere10cm_F"" createVehicle [0,0,0]; " \n " _spr  setObjectTexture [0, ""#(rgb,8,8,3)color(1,0,0,1)""];" \n "_spr setPosASL (_this select 0 select 3); ary=ary+[_spr]}];}";
 				name="lane_4";
 			};
 			id=3882;
@@ -22093,7 +22093,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14435.905,20.086805,15888.518};
-				angles[]={0,6.0195708,0};
+				angles[]={0,4.6912823,0};
 			};
 			side="Empty";
 			flags=4;
@@ -22153,6 +22153,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14437.331,20.086805,15887.194};
+				angles[]={0,5.511591,0};
 			};
 			side="Empty";
 			flags=5;
@@ -22211,6 +22212,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14434.61,20.086805,15889.929};
+				angles[]={0,4.746623,0};
 			};
 			side="Empty";
 			flags=5;
@@ -22504,7 +22506,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14444.902,17.71138,15879.305};
+				position[]={14443.802,17.768259,15880.486};
 				angles[]={0,3.9339211,0};
 			};
 			side="Empty";
@@ -22514,7 +22516,7 @@ class Mission
 			};
 			id=4088;
 			type="Land_GH_Stairs_F";
-			atlOffset=-1.7009449;
+			atlOffset=-1.6440659;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22741,7 +22743,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14428.083,17.71669,15896.482};
+				position[]={14432.642,17.762325,15891.901};
 				angles[]={0,3.926991,0};
 			};
 			side="Empty";
@@ -22751,7 +22753,7 @@ class Mission
 			};
 			id=4097;
 			type="Land_GH_Stairs_F";
-			atlOffset=-1.6905251;
+			atlOffset=-1.6499996;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25849,7 +25851,7 @@ class Mission
 			{
 				condition="call{this}";
 				onActivation="call{anz1_02 hideObjectGlobal false;" \n "anz2_02 hideObjectGlobal false;" \n "anz3_02 hideObjectGlobal false;" \n "anz4_02 hideObjectGlobal false;" \n """area_mk_02"" setMarkerColor ""Colorred"";" \n "}";
-				onDeactivation="call{anz1_02 hideObjectGlobal true;" \n "anz2_02 hideObjectGlobal true;" \n "anz3_02 hideObjectGlobal true;" \n "anz4_02 hideObjectGlobal true;" \n """area_mk_02"" setMarkerColor ""Colorblack"";" \n "}";
+				onDeactivation="call{anz1_02 hideObjectGlobal true;" \n "anz2_02 hideObjectGlobal true;" \n "anz3_02 hideObjectGlobal true;" \n "anz4_02 hideObjectGlobal true;" \n """area_mk_02"" setMarkerColor ""Colorblack"";" \n "_nul = [] execVM ""scripts\simmax\targets\rangepop_2.sqf"";" \n "_nul = [] execVM ""scripts\simmax\targets\rangepop_1.sqf"";}";
 				sizeA=42;
 				sizeB=15;
 				sizeC=4;
@@ -26820,7 +26822,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14445.844,20.917261,15881.668};
+				position[]={14444.771,20.917261,15882.791};
 			};
 			side="Empty";
 			flags=4;
@@ -27038,7 +27040,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14447.267,20.917261,15880.245};
+				position[]={14446.057,20.917261,15881.463};
 			};
 			side="Empty";
 			flags=4;
@@ -27077,7 +27079,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14430.414,20.917261,15897.363};
+				position[]={14434.868,20.917261,15892.857};
 			};
 			side="Empty";
 			flags=4;
@@ -27116,7 +27118,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14428.951,20.914465,15898.858};
+				position[]={14433.623,20.914465,15894.097};
 			};
 			side="Empty";
 			class Attributes
@@ -27125,7 +27127,7 @@ class Mission
 			};
 			id=4209;
 			type="Land_Bollard_01_F";
-			atlOffset=2.4869995;
+			atlOffset=2.4842033;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27467,8 +27469,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14481.253,20.669516,15853.172};
-				angles[]={0,0.80800301,0};
+				position[]={14481.253,20.669777,15853.172};
+				angles[]={0,0.80800015,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27480,6 +27482,7 @@ class Mission
 			};
 			id=4218;
 			type="Box_NATO_Ammo_F";
+			atlOffset=0.00026130676;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27546,15 +27549,15 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14452.523,17.91,15884.152};
-			angle=3.9322584;
+			angle=3.9322593;
 			class Attributes
 			{
 				name="trig100";
 				condition="call{this && player in thisList }";
 				onActivation="call{nul = [lane_4a] execVM ""scripts\simmax\targets\target100.sqf"";" \n "}";
-				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""]; camDestroy cam; [""rendertarget0""] call BIS_fnc_PIP; deleteVehicle temp_PIPcam_Vehicle; cam = nil;}";
-				sizeA=1.2;
-				sizeB=1.2;
+				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""]; camDestroy cam; [""rendertarget0""] call BIS_fnc_PIP; deleteVehicle temp_PIPcam_Vehicle; cam = nil;" \n "{deletevehicle _x} foreach ary;ary=[];" \n "}";
+				sizeA=1.4;
+				sizeB=1.3;
 				sizeC=4;
 				interuptable=1;
 				repeatable=1;
@@ -27887,15 +27890,15 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14449.831,17.91,15887.103};
-			angle=3.9322584;
+			angle=3.9322593;
 			class Attributes
 			{
 				name="trig100_1";
-				condition="call{this && player in thisList}";
-				onActivation="call{nul = [lane_3a] execVM ""scripts\simmax\targets\target100.sqf"";}";
-				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""];  " \n "        camDestroy cam;  " \n "        [""rendertarget0""] call BIS_fnc_PIP;  " \n "        deleteVehicle temp_PIPcam_Vehicle;  " \n "        cam = nil;}";
-				sizeA=1.2;
-				sizeB=1.2;
+				condition="call{this  && player in thisList}";
+				onActivation="call{nul = [lane_3a] execVM ""scripts\simmax\targets\target100.sqf"";" \n "}";
+				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""];  " \n "        camDestroy cam;  " \n "        [""rendertarget0""] call BIS_fnc_PIP;  " \n "        deleteVehicle temp_PIPcam_Vehicle;  " \n "        cam = nil;" \n "{deletevehicle _x} foreach ary;ary=[];" \n "}";
+				sizeA=1.4;
+				sizeB=1.3;
 				sizeC=4;
 				interuptable=1;
 				repeatable=1;
@@ -27909,15 +27912,15 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14447.082,17.91,15889.896};
-			angle=3.9322584;
+			angle=3.9322593;
 			class Attributes
 			{
 				name="trig100_2";
 				condition="call{this && player in thisList}";
-				onActivation="call{nul = [lane_2a] execVM ""scripts\simmax\targets\target100.sqf"";}";
-				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""];  " \n "        camDestroy cam;  " \n "        [""rendertarget0""] call BIS_fnc_PIP;  " \n "        deleteVehicle temp_PIPcam_Vehicle;  " \n "        cam = nil;}";
-				sizeA=1.2;
-				sizeB=1.2;
+				onActivation="call{nul = [lane_2a] execVM ""scripts\simmax\targets\target100.sqf"";" \n "}";
+				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""];  " \n "        camDestroy cam;  " \n "        [""rendertarget0""] call BIS_fnc_PIP;  " \n "        deleteVehicle temp_PIPcam_Vehicle;  " \n "        cam = nil;" \n "{deletevehicle _x} foreach ary;ary=[];" \n "}";
+				sizeA=1.4;
+				sizeB=1.3;
 				sizeC=4;
 				interuptable=1;
 				repeatable=1;
@@ -27931,15 +27934,15 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14444.54,17.91,15892.479};
-			angle=3.9322584;
+			angle=3.9322591;
 			class Attributes
 			{
 				name="trig100_3";
-				condition="call{this && player in thisList}";
-				onActivation="call{nul = [lane_1a] execVM ""scripts\simmax\targets\target100.sqf"";}";
-				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""];  " \n "        camDestroy cam;  " \n "        [""rendertarget0""] call BIS_fnc_PIP;  " \n "        deleteVehicle temp_PIPcam_Vehicle;  " \n "        cam = nil;}";
-				sizeA=1.2;
-				sizeB=1.2;
+				condition="call{this  && player in thisList}";
+				onActivation="call{nul = [lane_1a] execVM ""scripts\simmax\targets\target100.sqf"";" \n "}";
+				onDeactivation="call{cam cameraEffect [""TERMINATE"", ""BACK""];  " \n "        camDestroy cam;  " \n "        [""rendertarget0""] call BIS_fnc_PIP;  " \n "        deleteVehicle temp_PIPcam_Vehicle;  " \n "        cam = nil;" \n "{deletevehicle _x} foreach ary;ary=[];" \n "}";
+				sizeA=1.4;
+				sizeB=1.3;
 				sizeC=4;
 				interuptable=1;
 				repeatable=1;
@@ -31087,7 +31090,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{this setObjectTextureGlobal [0, ""pics\simmax\SST_10.paa""];" \n "this addAction [""<t color=""""#FF0000"""">"" +  ""Reset Targets"", ""scripts\simmax\targets\rangepop_2.sqf""];" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;" \n "}";
+				init="call{this addAction [""<t color=""""#FF0000"""">"" +  ""Reset Targets"", ""scripts\simmax\targets\rangepop_2.sqf""];" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;" \n "}";
 				disableSimulation=1;
 			};
 			id=4297;
@@ -31096,6 +31099,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pics\simmax\SST_10.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
@@ -31114,7 +31136,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item522
@@ -31154,6 +31176,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pics\simmax\RW_08.jpg";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
 					class Value
@@ -31171,7 +31212,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item524
@@ -31195,6 +31236,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pics\simmax\RW_08.jpg";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="allowDamage";
 					expression="_this allowdamage _value;";
 					class Value
@@ -31212,7 +31272,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item525
@@ -41183,8 +41243,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15110.254,18.761049,17257.33};
-				angles[]={4.712389,3.1415923,0.7567023};
+				position[]={15110.254,18.761164,17257.33};
+				angles[]={4.712389,3.1415927,0.75670493};
 			};
 			side="Empty";
 			class Attributes
@@ -41195,7 +41255,7 @@ class Mission
 			};
 			id=4565;
 			type="Land_Tablet_02_F";
-			atlOffset=0.74139977;
+			atlOffset=0.74151421;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41617,7 +41677,7 @@ class Mission
 			};
 			id=4573;
 			type="UserTexture1m_F";
-			atlOffset=3.5179043;
+			atlOffset=3.5179062;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42670,7 +42730,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15112.099,18.586054,17228.225};
+				position[]={15112.109,18.586054,17228.225};
 				angles[]={0,5.4016891,0};
 			};
 			side="Empty";
@@ -42978,7 +43038,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];}";
+				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];" \n "" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;}";
 				disableSimulation=1;
 			};
 			id=4641;
@@ -45098,8 +45158,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -45108,10 +45168,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -45136,8 +45196,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -45146,10 +45206,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -45266,6 +45326,29 @@ class Mission
 			id=4805;
 			type="Land_Tablet_02_F";
 			atlOffset=1.316;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pics\simmax\RW_08.jpg";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item863
 		{
@@ -46375,8 +46458,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15132.573,23.892179,17252.789};
-				angles[]={0,4.6949806,0};
+				position[]={15132.827,23.892179,17250.963};
+				angles[]={0,5.4477715,-0};
 			};
 			side="Empty";
 			flags=5;
@@ -46391,8 +46474,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15089.026,23.892179,17206.504};
-				angles[]={0,3.1251485,0};
+				position[]={15091.029,23.892179,17206.445};
+				angles[]={0,2.2512789,-0};
 			};
 			side="Empty";
 			flags=5;
@@ -46998,6 +47081,278 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item903
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14434.781,19.124001,15887.966};
+				angles[]={0,0.79964006,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="anz2_05";
+				disableSimulation=1;
+			};
+			id=4927;
+			type="Sign_Sphere10cm_Geometry_F";
+			atlOffset=1.2140007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(0.9,0.0,0.033333,1.000000,ca)";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item904
+		{
+			dataType="Trigger";
+			position[]={14337.545,20.229544,16081.099};
+			angle=3.9295554;
+			class Attributes
+			{
+				condition="call{count grad_adlerBase_airVehicleUnits  > 0}";
+				onActivation="call{anz1_05 hideObjectGlobal false;" \n "anz2_05 hideObjectGlobal false;" \n "anz3_05 hideObjectGlobal false;" \n "anz4_05 hideObjectGlobal false;" \n """area_mk_05"" setMarkerColor ""Colorred"";" \n "}";
+				onDeactivation="call{anz1_05 hideObjectGlobal true;" \n "anz2_05 hideObjectGlobal true;" \n "anz3_05 hideObjectGlobal true;" \n "anz4_05 hideObjectGlobal true;" \n """area_mk_05"" setMarkerColor ""Colorblack"";" \n "}";
+				sizeA=0;
+				sizeB=0;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=4928;
+			type="EmptyDetector";
+			atlOffset=2.382;
+		};
+		class Item905
+		{
+			dataType="Marker";
+			position[]={14080,0,16992};
+			name="area_mk_05";
+			text="Airborn";
+			type="mil_box";
+			colorName="ColorBlack";
+			id=4929;
+			atlOffset=-12.010854;
+		};
+		class Item906
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14184.095,20.757502,16265.725};
+				angles[]={0,3.8887856,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="anz1_05";
+				disableSimulation=1;
+			};
+			id=4930;
+			type="Sign_Sphere10cm_Geometry_F";
+			atlOffset=1.1675014;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(0.9,0.0,0.033333,1.000000,ca)";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item907
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15111.714,19.049011,17227.717};
+				angles[]={0,5.4017067,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="anz3_05";
+				disableSimulation=1;
+			};
+			id=4931;
+			type="Sign_Sphere10cm_Geometry_F";
+			atlOffset=1.1390114;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(0.9,0.0,0.033333,1.000000,ca)";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item908
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15082.071,25.073854,14906.991};
+				angles[]={0,3.3244858,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="anz4_05";
+				disableSimulation=1;
+			};
+			id=4933;
+			type="Sign_Sphere10cm_Geometry_F";
+			atlOffset=1.5454102;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#(argb,8,8,3)color(0.9,0.0,0.033333,1.000000,ca)";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
