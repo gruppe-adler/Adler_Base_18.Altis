@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=241;
+		nextID=244;
 	};
 	class Camera
 	{
-		pos[]={13946.173,134.18591,16300.301};
-		dir[]={0.84543025,-0.50824809,0.16429172};
-		up[]={0.49893287,0.86119759,0.096957691};
-		aside[]={0.1907656,-3.0116644e-007,-0.9816668};
+		pos[]={14309.373,99.063583,16233.618};
+		dir[]={0.77687961,-0.450472,0.44000438};
+		up[]={0.39201164,0.8927682,0.22202571};
+		aside[]={0.49283621,-4.1374005e-007,-0.87016505};
 	};
 };
 binarizationWanted=0;
@@ -11975,19 +11975,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14179.531,20.375853,16270.739};
-				angles[]={0,5.9563589,0.0012918708};
+				position[]={14179.531,20.375851,16270.739};
+				angles[]={0,5.9563546,0.0012915437};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this addaction [""Open Virtual Arsenal"", { [""Open"",true] call BIS_fnc_arsenal; }]; [this] call grad_customGear_fnc_addAction;";
+				init="call{this addaction [""Open Virtual Arsenal"", { [""Open"",true] call BIS_fnc_arsenal; }]; [this] call grad_customGear_fnc_addAction;}";
 				description="Zeus #2";
 			};
 			id=3631;
 			type="Box_NATO_AmmoVeh_F";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33681,8 +33682,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15092.846,18.369984,17222.783};
-				angles[]={0,0.76988298,0};
+				position[]={15092.846,18.369528,17222.783};
+				angles[]={0,0.7698822,0};
 			};
 			side="Empty";
 			flags=4;
@@ -33690,11 +33691,12 @@ class Mission
 			{
 				health=0;
 				ammo=0;
+				init="call{this addaction [""Open Virtual Arsenal"", { [""Open"",true] call BIS_fnc_arsenal; }]; [this] call grad_customGear_fnc_addAction;}";
 				disableSimulation=1;
 			};
 			id=4402;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.0069561005;
+			atlOffset=0.0065002441;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33758,7 +33760,7 @@ class Mission
 			};
 			id=4403;
 			type="rhsusf_weapon_MP7A1_desert";
-			atlOffset=0.023168564;
+			atlOffset=0.02362442;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33800,7 +33802,7 @@ class Mission
 			};
 			id=4404;
 			type="Weapon_SMG_05_F";
-			atlOffset=0.016395569;
+			atlOffset=0.016851425;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33882,7 +33884,7 @@ class Mission
 			};
 			id=4406;
 			type="rhssaf_weapon_g36c";
-			atlOffset=0.44939423;
+			atlOffset=0.44985008;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40058,7 +40060,7 @@ class Mission
 			};
 			id=4541;
 			type="rhssaf_weapon_g36c";
-			atlOffset=0.45039558;
+			atlOffset=0.45027924;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40088,8 +40090,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15106.629,18.396412,17262.271};
-				angles[]={0,0.75670183,0};
+				position[]={15106.629,18.396528,17262.271};
+				angles[]={0,0.75670493,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40097,11 +40099,12 @@ class Mission
 			{
 				health=0;
 				ammo=0;
+				init="call{this addaction [""Open Virtual Arsenal"", { [""Open"",true] call BIS_fnc_arsenal; }]; [this] call grad_customGear_fnc_addAction;}";
 				disableSimulation=1;
 			};
 			id=4542;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.025857925;
+			atlOffset=0.025974274;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40163,7 +40166,7 @@ class Mission
 			};
 			id=4543;
 			type="rhsusf_weapon_MP7A1_desert";
-			atlOffset=0.02359581;
+			atlOffset=0.023479462;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40207,7 +40210,7 @@ class Mission
 			};
 			id=4544;
 			type="Weapon_SMG_05_F";
-			atlOffset=0.030397415;
+			atlOffset=0.030281067;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40279,8 +40282,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15107.941,18.393414,17246.363};
-				angles[]={0,0.75670183,0};
+				position[]={15107.94,18.393528,17246.363};
+				angles[]={0,0.75670493,0};
 			};
 			side="Empty";
 			flags=4;
@@ -40288,11 +40291,12 @@ class Mission
 			{
 				health=0;
 				ammo=0;
+				init="call{this addaction [""Open Virtual Arsenal"", { [""Open"",true] call BIS_fnc_arsenal; }]; [this] call grad_customGear_fnc_addAction;}";
 				disableSimulation=1;
 			};
 			id=4546;
 			type="Box_NATO_Equip_F";
-			atlOffset=0.024141312;
+			atlOffset=0.024255753;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40356,7 +40360,7 @@ class Mission
 			};
 			id=4547;
 			type="rhsusf_weapon_MP7A1_desert";
-			atlOffset=0.023393631;
+			atlOffset=0.02327919;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40398,7 +40402,7 @@ class Mission
 			};
 			id=4548;
 			type="Weapon_SMG_05_F";
-			atlOffset=0.016393661;
+			atlOffset=0.016279221;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40480,7 +40484,7 @@ class Mission
 			};
 			id=4550;
 			type="rhssaf_weapon_g36c";
-			atlOffset=0.44939232;
+			atlOffset=0.44927788;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45158,8 +45162,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -45168,10 +45172,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -45196,8 +45200,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -45206,10 +45210,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
