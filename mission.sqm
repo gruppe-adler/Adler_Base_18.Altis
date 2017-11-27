@@ -16,14 +16,10 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=238;
+		nextID=241;
 	};
 	class Camera
 	{
-		pos[]={15144.508,45.074974,17192.08};
-		dir[]={-0.68927437,-0.45616823,0.56288862};
-		up[]={-0.35332817,0.88988394,0.28854135};
-		aside[]={0.63253087,-1.3122917e-007,0.77455366};
 	};
 };
 binarizationWanted=0;
@@ -159,7 +155,7 @@ class AddonsMetaData
 		{
 			className="cba_jr";
 			name="Community Base Addons - Joint Rails";
-			author="CBA-Team";
+			author="CBA Team";
 			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item4
@@ -868,7 +864,7 @@ class Mission
 {
 	class Intel
 	{
-		overviewText="Virtual Arsenal zum Ausrüsten und  Waffen testen.";
+		overviewText="Adler Base zum Ausrüsten und  Waffen testen.";
 		startWeather=0.42999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -27549,7 +27545,6 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14452.523,17.91,15884.152};
-			angle=3.9322593;
 			class Attributes
 			{
 				name="trig100";
@@ -27890,7 +27885,6 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14449.831,17.91,15887.103};
-			angle=3.9322593;
 			class Attributes
 			{
 				name="trig100_1";
@@ -27912,7 +27906,6 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14447.082,17.91,15889.896};
-			angle=3.9322593;
 			class Attributes
 			{
 				name="trig100_2";
@@ -27934,7 +27927,6 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14444.54,17.91,15892.479};
-			angle=3.9322591;
 			class Attributes
 			{
 				name="trig100_3";
@@ -45158,8 +45150,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -45168,10 +45160,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -45196,8 +45188,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -45206,10 +45198,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -46459,7 +46451,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15132.827,23.892179,17250.963};
-				angles[]={0,5.4477715,-0};
+				angles[]={0,5.4477715,0};
 			};
 			side="Empty";
 			flags=5;
@@ -46475,7 +46467,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15091.029,23.892179,17206.445};
-				angles[]={0,2.2512789,-0};
+				angles[]={0,2.2512789,0};
 			};
 			side="Empty";
 			flags=5;
@@ -47147,7 +47139,6 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14337.545,20.229544,16081.099};
-			angle=3.9295554;
 			class Attributes
 			{
 				condition="call{count grad_adlerBase_airVehicleUnits  > 0}";

@@ -16,6 +16,10 @@ enableDebugConsole = 1;  // Admin only
 #include "modules\grad-vehicleSpawner\grad_vehicleSpawner.hpp"
 
 
+//GRAD Heligame by Slant/McDiod
+#define MODULES_DIRECTORY modules
+
+
 // *****************        für Teleport-Board Anzeige Airborne
 class Extended_GetIn_EventHandlers {
     class Air {
@@ -52,7 +56,7 @@ class CfgFunctions {
 #include "modules\grad-customGear\cfgFunctions.hpp"
 #include "modules\grad-vehicleSpawner\cfgFunctions.hpp"
 #include "GRAD_fireworks\cfgFunctions.hpp"
-//#include "heligame\cfgFunctions.hpp" //Rausgenommen bis Fix da ist
+#include "modules\grad-heligame\cfgFunctions.hpp"
 };
 
 class grad_customGear {
