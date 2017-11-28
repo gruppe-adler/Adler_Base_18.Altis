@@ -127,4 +127,4 @@ wreckLimit = 5;                                                                /
 wreckRemovalMinTime = 30;                                                      // Mindestdauer bevor ein Wrack gelöscht wird
 wreckRemovalMaxTime = 60;                                                     // Maximaldauer nach der ein Wrack gelöscht wird
 
-minPlayerDistance = 50; // Mindestabstand zu allen Spielern, ab der Leichen oder Wracks gelöscht werden dürfen
+minPlayerDistance = 1; // Mindestabstand zu allen Spielern, ab der Leichen oder Wracks gelöscht werden dürfen
