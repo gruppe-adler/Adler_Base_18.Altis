@@ -77,7 +77,7 @@ class cfgSounds
 
 
 
-//XiviD's notification für Arena und Base
+// XiviD's notification für Arena und Base
 
 class CfgNotifications
 {
@@ -97,7 +97,7 @@ class CfgNotifications
   {
       title ="Beförderungsarena";
       iconPicture = "pics\gruppe-adler.paa";
-      description = "Willkommen in der Beförderungsarena.";
+      description = "Willkommen in der Beförderungsarena!";
       color[]= {1,1,1,1};
       duration = 4;
   };
@@ -107,7 +107,7 @@ class CfgNotifications
       title ="Adler Base";
       iconPicture = "pics\gruppe-adler.paa";
       iconText = "";
-      description = "Willkommen zurück in der Adler Base.";
+      description = "Willkommen zurück in der Adler Base!";
       color[]= {1,1,1,1};
       duration=3;
       priority=0;
@@ -115,3 +115,16 @@ class CfgNotifications
   };
 };
 
+// Legt Einstellungen für die automatische Leichen- und Wrack-Müllabfuhr fest.
+
+corpseManagerMode = 1;                                                          // Leichen aufräumen (0/1)
+corpseLimit = 1;                                                                // Schwellenwert an Leichen, ab dem die corpseRemovalMinTime benutzt wird
+corpseRemovalMinTime = 1;                                                     // Mindestdauer bevor eine Leiche gelöscht wird
+corpseRemovalMaxTime = 1;                                                       // Maximaldauer nach der eine Leiche gelöscht wird
+
+wreckManagerMode = 1;                                                           // Wracks aufräumen (0/1)
+wreckLimit = 5;                                                                // Schwellenwert an Wracks, ab dem die wreckRemovalMinTime benutzt wird
+wreckRemovalMinTime = 30;                                                      // Mindestdauer bevor ein Wrack gelöscht wird
+wreckRemovalMaxTime = 60;                                                     // Maximaldauer nach der ein Wrack gelöscht wird
+
+minPlayerDistance = 50; // Mindestabstand zu allen Spielern, ab der Leichen oder Wracks gelöscht werden dürfen

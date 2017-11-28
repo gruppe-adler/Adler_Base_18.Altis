@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=522;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=4937;
+		nextID=4944;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=244;
+		nextID=250;
 	};
 	class Camera
 	{
-		pos[]={14309.373,99.063583,16233.618};
-		dir[]={0.77687961,-0.450472,0.44000438};
-		up[]={0.39201164,0.8927682,0.22202571};
-		aside[]={0.49283621,-4.1374005e-007,-0.87016505};
+		pos[]={14193.386,21.994951,16289.129};
+		dir[]={0.62904543,-0.24341527,-0.73842275};
+		up[]={0.15791167,0.96988988,-0.18536696};
+		aside[]={-0.76131058,-3.3876859e-007,-0.64854056};
 	};
 };
 binarizationWanted=0;
@@ -890,7 +890,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=910;
+		items=913;
 		class Item0
 		{
 			dataType="Marker";
@@ -28083,7 +28083,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;" \n "this addAction [""<t color=""""#FF0000"""">"" + ""Del. Markers"",{{deletevehicle _x} foreach ary;ary=[]}];" \n "this addAction [""<t color=""""#FF0000"""">"" + ""600m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""600m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""500m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""500m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""400m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""400m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""300m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""300m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""200m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""200m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""100m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""100m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + "" 30m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""30m_mk""],0,false,true];}";
+				init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;" \n "this addAction [""<t color=""""#FF0000"""">"" + ""Del. Markers"",{{deletevehicle _x} foreach ary;ary=[]}];" \n "this addAction [""<t color=""""#FF0000"""">"" + ""700m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""700m_mk""],0,false,true]; " \n "this addAction [""<t color=""""#FF0000"""">"" + ""600m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""600m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""500m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""500m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""400m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""400m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""300m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""300m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""200m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""200m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""100m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""100m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + "" 30m"",""scripts\simmax\targets\SM_Target_range_L3.sqf"",[""30m_mk""],0,false,true];}";
 				disableSimulation=1;
 			};
 			id=4231;
@@ -28143,7 +28143,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;" \n "this addAction [""<t color=""""#FF0000"""">"" + ""Del. Markers"",{{deletevehicle _x} foreach ary;ary=[]}];" \n "this addAction [""<t color=""""#FF0000"""">"" + ""600m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""600m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""500m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""500m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""400m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""400m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""300m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""300m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""200m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""200m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""100m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""100m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + "" 30m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""30m_mk""],0,false,true];}";
+				init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;" \n "this addAction [""<t color=""""#FF0000"""">"" + ""Del. Markers"",{{deletevehicle _x} foreach ary;ary=[]}];" \n "this addAction [""<t color=""""#FF0000"""">"" + ""700m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""700m_mk""],0,false,true]; " \n "this addAction [""<t color=""""#FF0000"""">"" + ""600m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""600m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""500m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""500m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""400m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""400m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""300m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""300m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""200m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""200m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""100m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""100m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + "" 30m"",""scripts\simmax\targets\SM_Target_range_L2.sqf"",[""30m_mk""],0,false,true];}";
 				disableSimulation=1;
 			};
 			id=4232;
@@ -28203,7 +28203,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal; " \n "this addAction [""<t color=""""#FF0000"""">"" + ""Del. Markers"",{{deletevehicle _x} foreach ary;ary=[]}]; " \n "this addAction [""<t color=""""#FF0000"""">"" + ""600m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""600m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""500m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""500m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""400m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""400m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""300m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""300m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""200m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""200m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""100m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""100m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + "" 30m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""30m_mk""],0,false,true];}";
+				init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal; " \n "this addAction [""<t color=""""#FF0000"""">"" + ""Del. Markers"",{{deletevehicle _x} foreach ary;ary=[]}];" \n "this addAction [""<t color=""""#FF0000"""">"" + ""700m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""700m_mk""],0,false,true];  " \n "this addAction [""<t color=""""#FF0000"""">"" + ""600m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""600m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""500m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""500m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""400m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""400m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""300m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""300m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""200m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""200m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + ""100m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""100m_mk""],0,false,true];   " \n "this addAction [""<t color=""""#FF0000"""">"" + "" 30m"",""scripts\simmax\targets\SM_Target_range_L1.sqf"",[""30m_mk""],0,false,true];}";
 				disableSimulation=1;
 			};
 			id=4233;
@@ -45323,7 +45323,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				init="call{firebase addAction [""Celebration"", ""Scripts\XiviD\Celebration.sqf""];" \n "firebase addAction [""Big Celebration"", ""Scripts\XiviD\BigCelebration.sqf""];}";
+				init="call{firebase addAction [""<t color='#EC9A19'>Celebration</t>"", ""Scripts\XiviD\Celebration.sqf""];" \n "firebase addAction [""<t color='#EC9A19'>Big Celebration</t>"", ""Scripts\XiviD\BigCelebration.sqf""];" \n "" \n "}";
 				name="Firebase";
 				disableSimulation=1;
 			};
@@ -47430,6 +47430,59 @@ class Mission
 				};
 				nAttributes=3;
 			};
+		};
+		class Item910
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14383.695,3.0982356,15381.239};
+				angles[]={6.2312322,0,6.2645216};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=4941;
+			type="Land_SharpStones_erosion";
+			atlOffset=0.092841148;
+		};
+		class Item911
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14380.192,2.7032719,15371.719};
+				angles[]={6.2551923,0,6.2778478};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=4942;
+			type="Land_SharpStones_erosion";
+			atlOffset=0.092945576;
+		};
+		class Item912
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14401.108,2.6831009,15363.245};
+				angles[]={6.2418756,3.2742944,6.2312331};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=4943;
+			type="Land_SharpStones_erosion";
 		};
 	};
 	class Connections
