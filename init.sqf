@@ -2,6 +2,8 @@
 setviewdistance 4000;
 
 
+[5] execVM "manual\manualInit.sqf";
+
 // G-Kräfte ausstellen
 player setVariable ["ACE_GForceCoef", 0];
 
@@ -42,7 +44,7 @@ nopop = true;      				// Alle Klappscheiben klappen nicht mehr von selbst hoch
 // Simmax Ende ************************************************************************
 
 
-[5] execVM "manual\manualInit.sqf"
+
 
 
 //Adler Intro
