@@ -33,7 +33,7 @@ FlashligtArea_3 = 0;					// Area 3 flashlights off
 publicVariable "FlashligtArea_3";
 
 
-{_x hideObjectGlobal true;} foreach [anz1_01,anz1_02,anz1_03,anz1_04,anz2_01,anz2_02,anz2_03,anz2_04,anz3_01,anz3_02,anz3_03,anz3_04,anz4_01,anz4_02,anz4_03,anz4_04];
+{_x hideObjectGlobal true;} foreach [anz1_01,anz1_02,anz1_03,anz1_04,anz1_05,anz2_01,anz2_02,anz2_03,anz2_04,anz2_05,anz3_01,anz3_02,anz3_03,anz3_04,anz3_05,anz4_01,anz4_02,anz4_03,anz4_04,anz4_05];
 
 };
 
