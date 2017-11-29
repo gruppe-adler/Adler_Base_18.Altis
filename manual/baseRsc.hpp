@@ -19,7 +19,7 @@ class grad_adlerBase_manualRscBackground {
 	font = "PuristaMedium";
 	sizeEx = 0.04 * TEXT_SCALE;
 	shadow = 0;
-	colorBackground[] = {0, 0, 0, 0.70};
+	colorBackground[] = {0, 0, 0, 0.85};
 };
 
 class grad_adlerBase_manualRscPicture {
