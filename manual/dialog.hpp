@@ -13,7 +13,6 @@ class grad_adlerBase_rscDisplayManual {
 
     class controlsBackground {
         class title: grad_adlerBase_manualRscText {
-            moving = true;
             colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0])",1};
 
             x = grad_adlerBase_manualTotalX;

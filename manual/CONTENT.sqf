@@ -47,12 +47,22 @@ In den anderen Bereichen sind ebenfalls Teleport Boards aufgestellt, um dir das 
 
 
 "Shooting Range",
-"PLATZHALTER",
+"Auf dem Außenschießstand kannst du mit Lang- und Panzerabwehrwaffen üben.<br/>
+<br/>
+Im Bereich 1, auf dem Schießstand ganz links, schießt du auf statische Ziele in 400m Abstand.<br/>
+<br/>
+Nebenan, im Bereich 2, ist die Entfernung der Ziele von 30m bis 800m einstellbar. Leg dich dafür auf die Schießmatte und interagiere mit dem Bedienfeld zu deiner Linken.<br/>
+<br/>
+Von der rechten Hälfte des Schießstandes aus schießt man auf Bereich 3 und 4. In Bereich 3 sind Panzerattrappen aufgestellt. Dahinter befindet sich der Bereich 4, in dem Scharfschützenziele in einem
+Abstand von 800m bis 2000m aufgestellt sind. Auf dem Informationsschild kannst du ablesen, welche Ziele sich in welcher Entfernung befinden. Advanced Ballistics ist aktiv.",
 
 
 
 "Indoor Range",
-"PLATZHALTER",
+"In unserem Indoor Schießstand trainierst du deine CQC Fertigkeiten und Reflexe.<br/>
+<br/>
+In einer von vier Arenen geht es darum möglichst schnell und möglichst präzise Pappgegner auszuschalten und Pappzivilsten am Leben zu lassen.<br/>
+Interagiere mit dem Bedienfeld in der jeweiligen Arena, um die Übung zu starten. Equipmentkisten sind vor Ort vorhanden.",
 
 
 
