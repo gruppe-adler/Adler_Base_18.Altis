@@ -3,7 +3,7 @@
 #define GRAD_ADLERBASE_MANUALIDCCONTENTTITLE        60002
 #define GRAD_ADLERBASE_MANUALIDCCONTENT             60003
 #define GRAD_ADLERBASE_MANUALIDCPLAYERNAME          60004
-#define GRAD_ADLERBASE_MANUALIDCCHECKBOX            60005
+#define GRAD_ADLERBASE_MANUALIDCCOMBO            60005
 
 // DIMENSIONS AND POSITIONS ====================================================
 #define grad_adlerBase_manualTotalW                 (1.42 * X_SCALE)
@@ -12,7 +12,7 @@
 #define grad_adlerBase_manualButtonW                (0.120 * X_SCALE)
 #define grad_adlerBase_manualCheckBoxW              (0.025 * X_SCALE)
 #define grad_adlerBase_manualCheckBoxH              (0.025 * Y_SCALE)
-#define grad_adlerBase_manualCheckBoxBGW            (0.220 * X_SCALE)
+#define grad_adlerBase_manualComboBGW               (0.240 * X_SCALE)
 #define grad_adlerBase_manualContentTitleH          (0.060 * Y_SCALE)
 
 #define grad_adlerBase_manualPaddingX               (0.005 * X_SCALE)
@@ -50,7 +50,5 @@
 #define grad_adlerBase_manualContentTextH           (grad_adlerBase_manualContentH - grad_adlerBase_manualContentTitleH)
 
 #define grad_adlerBase_manualCloseButtonX           (grad_adlerBase_manualTotalX + grad_adlerBase_manualTotalW - grad_adlerBase_manualButtonW)
-#define grad_adlerBase_manualCheckBoxBGX            (grad_adlerBase_manualCloseButtonX - grad_adlerBase_manualElementSpacingX - grad_adlerBase_manualCheckBoxBGW)
+#define grad_adlerBase_manualComboBGX               (grad_adlerBase_manualCloseButtonX - grad_adlerBase_manualElementSpacingX - grad_adlerBase_manualComboBGW)
 #define grad_adlerBase_manualButtonY                (grad_adlerBase_manualTotalY + grad_adlerBase_manualTotalH - grad_adlerBase_manualBarH)
-
-#define grad_adlerBase_manualCheckBoxX              (grad_adlerBase_manualCloseButtonX - grad_adlerBase_manualCheckBoxX - grad_adlerBase_manualElementSpacingX)

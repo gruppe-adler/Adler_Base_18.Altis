@@ -34,7 +34,8 @@
 <br/>
 Wähle ein Thema aus der Liste links um mehr zu erfahren.<br/>
 <br/>
-Klick unten auf 'NICHT MEHR ANZEIGEN' um dieses Fenster nicht mehr bei Missionsstart anzuzeigen. Danach kannst du es trotzdem jederzeit über das Tablet auf dem Tisch vor dir manuell öffnen.",
+Wähle aus dem Menü unten rechts 'ÄNDERUNGEN ANZEIGEN' um dieses Fenster nur bei Missionsstart anzuzeigen, wenn es Neuigkeiten gibt. Wähle 'NIE ANZEIGEN' um dieses Fenster nie anzuzeigen.
+Danach kannst du es trotzdem jederzeit über das Tablet auf dem Tisch vor dir manuell öffnen (ACE-Interaction).",
 
 
 

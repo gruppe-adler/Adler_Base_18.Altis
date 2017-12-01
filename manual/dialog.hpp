@@ -9,7 +9,6 @@ class grad_adlerBase_rscDisplayManual {
     movingEnable = false;
     enableSimulation = true;
     onLoad = "_this call compile preprocessFileLineNumbers 'manual\onLoad.sqf'";
-    onUnload = "_this call compile preprocessFileLineNumbers 'manual\onUnload.sqf'";
 
     class controlsBackground {
         class title: grad_adlerBase_manualRscText {
@@ -54,26 +53,27 @@ class grad_adlerBase_rscDisplayManual {
             action = "closeDialog 1";
         };
 
-        class checkBoxText: grad_adlerBase_manualRscText {
-            x = grad_adlerBase_manualCheckBoxBGX;
+        /*class checkBoxText: grad_adlerBase_manualRscText {
+            x = grad_adlerBase_manualComboBGX;
             y = grad_adlerBase_manualButtonY;
-            w = grad_adlerBase_manualCheckBoxBGW;
+            w = grad_adlerBase_manualComboBGW;
             h = grad_adlerBase_manualBarH;
 
             style = ST_RIGHT;
             colorBackground[] = {0, 0, 0, 0.8};
             text = "NICHT MEHR ANZEIGEN";
-        };
+        };*/
 
-        class checkBox: grad_adlerBase_manualCheckBox {
-            idc = GRAD_ADLERBASE_MANUALIDCCHECKBOX;
+        class combo: grad_adlerBase_manualRscCombo {
+            idc = GRAD_ADLERBASE_MANUALIDCCOMBO;
 
-            x = grad_adlerBase_manualCheckBoxBGX;
+            onLoad = "_this call compile preprocessFileLineNumbers 'manual\onComboLoad.sqf'";
+            onLBSelChanged = "_this call compile preprocessFileLineNumbers 'manual\onComboSelChanged.sqf'";
+
+            x = grad_adlerBase_manualComboBGX;
             y = grad_adlerBase_manualButtonY;
-            w = grad_adlerBase_manualCheckBoxW;
-            h = grad_adlerBase_manualCheckBoxH;
-
-            text = "ASDASD";
+            w = grad_adlerBase_manualComboBGW;
+            h = grad_adlerBase_manualBarH;
         };
 
         class playerName: grad_adlerBase_manualRscText {

@@ -247,3 +247,51 @@ class grad_adlerBase_manualRscControlsGroupNoHScrollbar {
 		width = 0.021;
 	};
 };
+
+
+class grad_adlerBase_manualRscScrollbar {
+	color[] = {1, 1, 1, 1};
+	colorActive[] = {"(profileNamespace getVariable ['GUI_BCG_RGB_R', 0.69])", "(profileNamespace getVariable ['GUI_BCG_RGB_G', 0.75])", "(profileNamespace getVariable ['GUI_BCG_RGB_B', 0.5])", 1};
+	colorDisabled[] = {};
+	arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
+	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
+	thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+	border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+};
+
+class grad_adlerBase_manualRscCombo {
+	idc = -1;
+	type = CT_COMBO;
+	style = ST_CENTER;
+	sizeEx = 0.04 * TEXT_SCALE;
+	font = "PuristaMedium";
+	rowHeight = 0.04;
+	wholeHeight = 0.48;
+	maxHistoryDelay = 0;
+	autoScrollDelay = 5;
+	autoScrollSpeed = -1;
+	autoScrollRewind = 0;
+	colorText[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	colorScrollbar[] = {1, 0, 0, 0};
+	colorSelect[] = {0, 0, 0, 1};
+	colorSelect2[] = {0, 0, 0, 1};
+	colorSelectBackground[] = {0.95, 0.95, 0.95, 1};
+	colorSelectBackground2[] = {1, 1, 1, 0.0};
+	colorBackground[] = {0, 0, 0, 0.85};
+	soundSelect[] = {"", 0, 1};
+	soundExpand[] = {"", 0, 1};
+	soundCollapse[] = {"", 0, 1};
+	arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
+	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
+	class ComboScrollbar : grad_adlerBase_manualRscScrollbar {
+		color[] = {1, 1, 1, 1};
+		colorActive[] = {0, 0, 0, 1};
+		colorDisabled[] = {0, 0, 0, 1};
+		autoScrollEnabled = 1;
+		arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
+		arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+	};
+};
