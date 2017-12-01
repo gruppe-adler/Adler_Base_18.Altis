@@ -2,6 +2,8 @@
 setviewdistance 4000;
 
 
+[5] execVM "manual\manualInit.sqf";
+
 // G-Kräfte ausstellen
 player setVariable ["ACE_GForceCoef", 0];
 
@@ -60,6 +62,3 @@ titleCut ["", "BLACK IN", 2];
 waitUntil {time > 3};
 	["<img size= '6' shadow='false' image='pics\gruppe-adler.paa'/><br/><t size='.9' color='#FFFFFF'>Willkommen in der Adler Base      </t>",0,0,3,4] spawn BIS_fnc_dynamicText;
 };
-
-
-

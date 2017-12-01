@@ -11,6 +11,8 @@ respawnDialog = 0;
 respawnOnStart = 1;
 enableDebugConsole = 1;  // Admin only
 
+#include "manual\dialog.hpp"
+
 //GRAD Vehicle Spawner by McDiod
 
 #include "modules\grad-vehicleSpawner\grad_vehicleSpawner.hpp"
@@ -115,6 +117,8 @@ class CfgNotifications
   };
 };
 
+=======
+
 // Legt Einstellungen für die automatische Leichen- und Wrack-Müllabfuhr fest.
 
 corpseManagerMode = 1;                                                          // Leichen aufräumen (0/1)
@@ -128,3 +132,4 @@ wreckRemovalMinTime = 30;                                                      /
 wreckRemovalMaxTime = 60;                                                     // Maximaldauer nach der ein Wrack gelöscht wird
 
 minPlayerDistance = 1; // Mindestabstand zu allen Spielern, ab der Leichen oder Wracks gelöscht werden dürfen
+
