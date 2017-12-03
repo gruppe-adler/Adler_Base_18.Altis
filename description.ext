@@ -34,7 +34,7 @@ class Extended_GetIn_EventHandlers {
 class Extended_GetOut_EventHandlers {
     class Air {
         class grad_adlerBase_getOutAirVehicle {
-            serverGetOut = "params ['','','_unit']; if (isPlayer _unit) then {grad_adlerBase_airVehicleUnits = grad_adlerBase_airVehicleUnits - [_unit]; publicVariable 'grad_adlerBase_airVehicleUnits'};";
+            serverGetOut = "params ['','','_unit']; grad_adlerBase_airVehicleUnits = grad_adlerBase_airVehicleUnits - [_unit]; publicVariable 'grad_adlerBase_airVehicleUnits';";
         };
     };
 };
@@ -132,4 +132,3 @@ wreckRemovalMinTime = 30;                                                      /
 wreckRemovalMaxTime = 60;                                                     // Maximaldauer nach der ein Wrack gelöscht wird
 
 minPlayerDistance = 1; // Mindestabstand zu allen Spielern, ab der Leichen oder Wracks gelöscht werden dürfen
-
