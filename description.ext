@@ -9,7 +9,7 @@ respawn = 3;
 respawnDelay = 1;
 respawnDialog = 0;
 respawnOnStart = 1;
-enableDebugConsole = 1;  // Admin only
+enableDebugConsole = 2;  // Für alle
 
 #include "manual\dialog.hpp"
 
