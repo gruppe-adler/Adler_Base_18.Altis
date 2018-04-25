@@ -1,6 +1,4 @@
-
-setviewdistance 4000;
-
+["BLU_F","BaseLoadout"] call GRAD_Loadout_fnc_FactionSetLoadout;
 
 [5] execVM "manual\manualInit.sqf";
 
