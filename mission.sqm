@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=4991;
+		nextID=4993;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=280;
+		nextID=283;
 	};
 	class Camera
 	{
-		pos[]={14185.75,64.297577,16321.771};
-		dir[]={0.12698323,-0.64276636,-0.75555801};
-		up[]={0.10654949,0.76596999,-0.63398308};
-		aside[]={-0.98623651,1.4239922e-006,-0.16575268};
+		pos[]={12845.299,93.57444,16728.641};
+		dir[]={-0.67568135,-0.54314274,0.4984574};
+		up[]={-0.43713641,0.83959395,0.32248053};
+		aside[]={0.59365541,7.7736331e-008,0.80472553};
 	};
 };
 binarizationWanted=0;
@@ -3161,7 +3161,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=943;
+		items=944;
 		class Item0
 		{
 			dataType="Marker";
@@ -43584,7 +43584,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14209.475,19.524752,16276.27};
-			angle=3.9295564;
+			angle=3.9295561;
 			class Attributes
 			{
 				condition="call{this}";
@@ -46281,8 +46281,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46291,10 +46291,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -46319,8 +46319,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46329,10 +46329,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -49124,7 +49124,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12833.037,86.53685,16736.604};
+				position[]={12833.037,86.53685,16736.682};
 				angles[]={0.44377446,1.6136978,6.2601743};
 			};
 			side="Empty";
@@ -49135,6 +49135,7 @@ class Mission
 			};
 			id=4977;
 			type="rhs_mortar_M821_inv";
+			atlOffset=0.00020599365;
 		};
 		class Item930
 		{
@@ -49406,6 +49407,46 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item943
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12838.903,86.36705,16735.012};
+				angles[]={0.0026520467,3.7768018,6.247201};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4992;
+			type="Box_NATO_Support_F";
+			atlOffset=6.1035156e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""ACE_RangeTable_82mm""],[50]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
