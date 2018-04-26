@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=277;
+		nextID=280;
 	};
 	class Camera
 	{
-		pos[]={14169.328,107.97178,16326.221};
-		dir[]={-0.29179376,-0.60063052,-0.74446034};
-		up[]={-0.21922462,0.79944408,-0.5593099};
-		aside[]={-0.93109286,1.3823446e-006,0.36494383};
+		pos[]={14185.75,64.297577,16321.771};
+		dir[]={0.12698323,-0.64276636,-0.75555801};
+		up[]={0.10654949,0.76596999,-0.63398308};
+		aside[]={-0.98623651,1.4239922e-006,-0.16575268};
 	};
 };
 binarizationWanted=0;
@@ -43584,7 +43584,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14209.475,19.524752,16276.27};
-			angle=3.9295545;
+			angle=3.9295564;
 			class Attributes
 			{
 				condition="call{this}";
@@ -46281,8 +46281,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46291,10 +46291,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -46319,8 +46319,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46329,10 +46329,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -49344,7 +49344,7 @@ class Mission
 			name="mortar_range";
 			text="Mortar Range";
 			type="mil_box";
-			colorName="ColorWEST";
+			colorName="ColorBlue";
 			id=4989;
 			atlOffset=0.00040435791;
 		};

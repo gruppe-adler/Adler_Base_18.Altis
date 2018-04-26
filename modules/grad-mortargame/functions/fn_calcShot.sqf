@@ -1,6 +1,6 @@
 params ["_pos"];
 
-if (isNil "GRAD_MORTARSHOTVEHICLE") exitWith {};
+if (isNull GRAD_MORTARSHOTVEHICLE) exitWith {};
 
 _distance = GRAD_MORTARSHOTVEHICLE distance2D _pos;
 _dir = GRAD_MORTARSHOTVEHICLE getRelDir _pos;
