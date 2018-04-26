@@ -15,6 +15,7 @@ if (isNil "_pos") exitWith {["No position found!"] call grad_mortargame_fnc_mess
 private _veh = createVehicle ["C_Offroad_01_F", _pos, [], 0, "CAN_COLLIDE"];
 _veh addMPEventHandler ["MPKilled", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
+    deleteVehicle _unit;
     ["Ziel zerstört"] call grad_mortargame_fnc_message;
 }];
 GRAD_MORTARSHOTVEHICLE = _veh;
