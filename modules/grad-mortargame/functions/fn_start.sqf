@@ -16,7 +16,7 @@ private _veh = createVehicle ["C_Offroad_01_F", _pos, [], 0, "CAN_COLLIDE"];
 _veh addMPEventHandler ["MPKilled", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
     deleteVehicle _unit;
-    ["Ziel zerstört"] call grad_mortargame_fnc_message;
+    ["Ziel zerstört."] remoteExecCall ["grad_mortargame_fnc_message",_instigator,false];
 }];
 GRAD_MORTARSHOTVEHICLE = _veh;
 
@@ -25,7 +25,7 @@ _handle = _mortar addEventHandler ["Fired", {
     _unit setAmmo [((weapons _unit)select 0), 1000000];
     [_projectile] call grad_mortargame_fnc_logPos;
 }];
-[600, [_veh], _handle, _mortar] call grad_mortargame_fnc_cleanUp;
+[600, [_veh], _handle, _mortar,player] call grad_mortargame_fnc_cleanUp;
 
 [_pos] call grad_mortargame_fnc_fiveLiner;
 MORTARSHOT_LASTPOS = [];

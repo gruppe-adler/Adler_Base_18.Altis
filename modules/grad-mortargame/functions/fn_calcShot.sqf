@@ -8,13 +8,13 @@ _heading = "";
 
 switch (true) do {
         case (_dir < 22.5 || _dir > 337.5)  :   {_heading = "Nord";};
-        case (_dir < 67.5)                  :   {_heading = "Nord-West";};
-        case (_dir < 112.5)                 :   {_heading = "West";};
-        case (_dir < 157.5)                 :   {_heading = "Süd-West";};
+        case (_dir < 67.5)                  :   {_heading = "Nord-Ost";};
+        case (_dir < 112.5)                 :   {_heading = "Ost";};
+        case (_dir < 157.5)                 :   {_heading = "Süd-Ost";};
         case (_dir < 202.5)                 :   {_heading = "Süd";};
-        case (_dir < 247.5)                 :   {_heading = "Süd-Ost";};
-        case (_dir < 292.5)                 :   {_heading = "Ost";};
-        case (_dir < 337.5)                 :   {_heading = "Nord-Ost";};
+        case (_dir < 247.5)                 :   {_heading = "Süd-West";};
+        case (_dir < 292.5)                 :   {_heading = "West";};
+        case (_dir < 337.5)                 :   {_heading = "Nord-West";};
 };
 _text = "";
 switch (true) do {
