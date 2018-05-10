@@ -1,3 +1,5 @@
+#define MODULES_DIRECTORY modules
+
 OnLoadMission = "";
 author="XiviD / Simmax für Gruppe Adler";  //appears as author in overview and loading screen
 overviewText="Danke auch an alle Mitwirkenden"; //appears in overview and loading screen
@@ -14,13 +16,7 @@ enableDebugConsole = 2;  // Für alle
 #include "manual\dialog.hpp"
 
 //GRAD Vehicle Spawner by McDiod
-
 #include "modules\grad-vehicleSpawner\grad_vehicleSpawner.hpp"
-
-
-//GRAD Heligame by Slant/McDiod
-#define MODULES_DIRECTORY modules
-
 
 // *****************        für Teleport-Board Anzeige Airborne
 class Extended_GetIn_EventHandlers {
@@ -40,15 +36,10 @@ class Extended_GetOut_EventHandlers {
 };
 // *****************
 
-
-
-
 class CfgGradVehicleSpawner {
     maxVehicles = 100;
     abandonedTime = 1500;
 };
-
-
 
 //GRAD-Zeug (CustomGear / VehicleSpawner / Fireworks / Heligames)
 #include "modules\grad-customGear\saveDialog\dialog.hpp"
@@ -58,7 +49,11 @@ class CfgFunctions {
 #include "modules\grad-customGear\cfgFunctions.hpp"
 #include "modules\grad-vehicleSpawner\cfgFunctions.hpp"
 #include "GRAD_fireworks\cfgFunctions.hpp"
+//GRAD Heligame by Slant/McDiod
 #include "modules\grad-heligame\cfgFunctions.hpp"
+//GRAD Mortargame by Slant/Salbei
+#include "modules\grad-mortargame\cfgFunctions.hpp"
+#include "modules\grad-loadout\CfgFunctions.hpp"
 };
 
 class grad_customGear {
@@ -70,17 +65,24 @@ class grad_customGear {
   actionsOnMissionStart = 0;
 };
 
-// GRAD Firework by Nomisum
+class Loadouts {
+    baseDelay = 5; // minimum time to wait after connect before applying loadout
+    perPlayerDelay = 0; // added random delay based on number of players
+    handleRadios = 0; // if radios should be handled. defaults to 0
+    resetLoadout = 1; // start with empty loadouts instead of modifying existing loadout
 
+    class Faction {
+        #include "modules\grad-factions\loadouts.hpp"
+    };
+};
+
+// GRAD Firework by Nomisum
 class cfgSounds
 {
   #include "GRAD_fireworks\cfgSounds.hpp"
 };
 
-
-
 // XiviD's notification für Arena und Base
-
 class CfgNotifications
 {
   class default
@@ -120,7 +122,6 @@ class CfgNotifications
 =======
 
 // Legt Einstellungen für die automatische Leichen- und Wrack-Müllabfuhr fest.
-
 corpseManagerMode = 1;                                                          // Leichen aufräumen (0/1)
 corpseLimit = 1;                                                                // Schwellenwert an Leichen, ab dem die corpseRemovalMinTime benutzt wird
 corpseRemovalMinTime = 1;                                                     // Mindestdauer bevor eine Leiche gelöscht wird
