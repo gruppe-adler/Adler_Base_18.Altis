@@ -1,6 +1,13 @@
 GRAD_heligame_inProgress = true;
-hint "Heligame beginnt!";
-[] call GRAD_heligame_fnc_lz;
+//&& (isClass (configFile >> "CfgVehicles" >> (vehicle player) >> "slingLoadMaxCargoMass")) && ((getNumber (configFile >> "CfgVehicles" >> (vehicle player) >> "slingLoadMaxCargoMass")) > 0)
+if (selectRandom [true,false]) then {
+    hint "Heligame Cargo beginnt!";
+    [] call GRAD_heligame_fnc_cargoPickup;
+}else{
+    hint "Heligame beginnt!";
+    [] call GRAD_heligame_fnc_lz;
+};
+
 
 [{CBA_missionTime - GRAD_heligame_startTime > 600}, {
     GRAD_heligame_inProgress = false;

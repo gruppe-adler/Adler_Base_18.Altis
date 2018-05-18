@@ -1,4 +1,4 @@
-params ["_GRAD_lz_pos", "_start_marker", "_lz_marker"];
+params ["_GRAD_lz_pos", "_lz_marker"];
 
 // Zufällige Smokefarbe wählen.
 _smokeColor = selectRandom
@@ -28,19 +28,18 @@ hint "Smoke is on the deck!";
 _GRAD_lz_trg = createTrigger ["EmptyDetector", _GRAD_lz_pos];
 _GRAD_lz_trg setTriggerArea [30, 30, 0, false, 30];
 _GRAD_lz_trg setTriggerActivation ["ANY", "PRESENT", false];
-_GRAD_lz_trg setVariable ["GRAD_local_start_marker", _start_marker];
 _GRAD_lz_trg setVariable ["GRAD_local_lz_marker", _lz_marker];
 _GRAD_lz_trg setTriggerTimeout [10, 15, 20, true];
 _GRAD_lz_trg setTriggerStatements
   [
-    "this",
-    "
-      ['TaskSucceeded',['','LZ abgeschlossen!']] call BIS_fnc_showNotification;
-      deleteMarker (thisTrigger getVariable 'GRAD_local_start_marker');
-      deleteMarker (thisTrigger getVariable 'GRAD_local_lz_marker');
+    "GRAD_HELIGAME_CARGOOBJECT in thisList",
+    format ["
+      ['TaskSucceeded',['','Cargo LZ abgeschlossen!']] call BIS_fnc_showNotification;
+      deleteVehicle %1;
+      deleteMarker %2;
       [] call GRAD_heligame_fnc_start;
       deleteVehicle thisTrigger;
-    ",
+    ",GRAD_HELIGAME_CARGOOBJECT, _lz_marker],
     "this"
   ];
 

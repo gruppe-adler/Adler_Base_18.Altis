@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=4996;
+		nextID=5016;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=289;
+		nextID=292;
 	};
 	class Camera
 	{
 		pos[]={15131.605,153.23294,14978.858};
-		dir[]={-0.46418571,-0.23036265,0.85525954};
-		up[]={-0.10988816,0.97310311,0.20246835};
-		aside[]={0.87889928,-3.259629e-008,0.47701585};
+		dir[]={0.064024188,-0.78612572,0.61474544};
+		up[]={0.081432603,0.61806339,0.78189766};
+		aside[]={0.99462491,1.1565862e-007,-0.10358783};
 	};
 };
 binarizationWanted=0;
@@ -119,7 +119,8 @@ addons[]=
 	"A3_Static_F_Exp_Mortar_01",
 	"rhsusf_c_m252",
 	"ace_mk6mortar",
-	"GRAD_flag"
+	"GRAD_flag",
+	"A3_Structures_F_Mil_Helipads"
 };
 class AddonsMetaData
 {
@@ -3171,7 +3172,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=945;
+		items=958;
 		class Item0
 		{
 			dataType="Marker";
@@ -43534,7 +43535,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14209.475,19.524752,16276.27};
-			angle=3.9295554;
+			angle=3.9295552;
 			class Attributes
 			{
 				condition="call{this}";
@@ -46231,8 +46232,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46241,10 +46242,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -46269,8 +46270,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46279,10 +46280,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -49475,6 +49476,337 @@ class Mission
 			id=4994;
 			type="GRAD_flag_gruppeAdlerWhite";
 			atlOffset=1.9073486e-006;
+		};
+		class Item945
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16083.687,15.820715,16999.662};
+				angles[]={6.2711854,0,0.0039967569};
+			};
+			areaSize[]={30,0,30};
+			flags=1;
+			id=4996;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item946
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16083.739,15.821014,16999.67};
+				angles[]={6.2711778,0,0.0039968039};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="grad_heligame_cargoSpawn";
+			};
+			id=4997;
+			type="Land_HelipadSquare_F";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item947
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16078.121,15.850979,16994.039};
+				angles[]={6.2392135,0,0.014664836};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4998;
+			type="PortableHelipadLight_01_yellow_F";
+		};
+		class Item948
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16089.381,15.829635,16994.021};
+				angles[]={6.223258,0,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=4999;
+			type="PortableHelipadLight_01_yellow_F";
+		};
+		class Item949
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16089.341,16.03968,17005.266};
+				angles[]={6.272521,0,0.015998369};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5000;
+			type="PortableHelipadLight_01_yellow_F";
+			atlOffset=0.03545475;
+		};
+		class Item950
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16078.13,15.969373,17005.303};
+				angles[]={6.2791886,0,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5001;
+			type="PortableHelipadLight_01_yellow_F";
+			atlOffset=2.8610229e-006;
+		};
+		class Item951
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16080.137,15.928333,16997.051};
+				angles[]={6.2791886,0,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5002;
+			type="PortableHelipadLight_01_red_F";
+		};
+		class Item952
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16087.306,15.914196,16997.021};
+				angles[]={6.2711854,0,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5003;
+			type="PortableHelipadLight_01_red_F";
+		};
+		class Item953
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16083.725,15.968535,17003.236};
+				angles[]={6.2791886,0,0.0039967569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=5004;
+			type="PortableHelipadLight_01_red_F";
+		};
+		class Item954
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16077.087,19.296755,16944.891};
+				angles[]={0,1.7053539,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=5005;
+			type="Land_LampHalogen_F";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item955
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16079.403,13.317027,16944.652};
+				angles[]={6.2791886,0,0.0026520467};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=5006;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item956
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16132.06,13.540447,17020.965};
+				angles[]={0.0066592805,0,0.014664836};
+			};
+			areaSize[]={5,-1,5};
+			flags=1;
+			id=5007;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item957
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={16131.352,19.500227,17023.068};
+				angles[]={0,5.788146,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=5008;
+			type="Land_LampHalogen_F";
+			atlOffset=0.0020189285;
 		};
 	};
 	class Connections
