@@ -1,6 +1,6 @@
 GRAD_heligame_inProgress = true;
-//&& (isClass (configFile >> "CfgVehicles" >> (vehicle player) >> "slingLoadMaxCargoMass")) && ((getNumber (configFile >> "CfgVehicles" >> (vehicle player) >> "slingLoadMaxCargoMass")) > 0)
-if (selectRandom [true,false]) then {
+private _heloType = typeOf (vehicle player);
+if (selectRandom [true,false] && (isNumber (configFile >> "CfgVehicles" >> _heloType >> "slingLoadMaxCargoMass")) && ((getNumber (configFile >> "CfgVehicles" >> _heloType >> "slingLoadMaxCargoMass")) > 0)) then {
     hint "Heligame Cargo beginnt!";
     [] call GRAD_heligame_fnc_cargoPickup;
 }else{

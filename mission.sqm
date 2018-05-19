@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=292;
+		nextID=295;
 	};
 	class Camera
 	{
-		pos[]={15131.605,153.23294,14978.858};
-		dir[]={0.064024188,-0.78612572,0.61474544};
-		up[]={0.081432603,0.61806339,0.78189766};
-		aside[]={0.99462491,1.1565862e-007,-0.10358783};
+		pos[]={16094.62,92.917725,16948.58};
+		dir[]={-0.19864145,-0.81443769,0.54519153};
+		up[]={-0.27881202,0.58025002,0.76522762};
+		aside[]={0.93957698,-1.0998338e-007,0.34233686};
 	};
 };
 binarizationWanted=0;
@@ -43535,7 +43535,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14209.475,19.524752,16276.27};
-			angle=3.9295552;
+			angle=3.9295549;
 			class Attributes
 			{
 				condition="call{this}";
@@ -46232,8 +46232,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46242,10 +46242,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -46270,8 +46270,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46280,10 +46280,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -49482,13 +49482,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16083.687,15.820715,16999.662};
+				position[]={16083.803,15.820898,16999.641};
 				angles[]={6.2711854,0,0.0039967569};
 			};
 			areaSize[]={30,0,30};
 			flags=1;
 			id=4996;
 			type="ModuleHideTerrainObjects_F";
+			atlOffset=-1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -49545,10 +49546,34 @@ class Mission
 			class Attributes
 			{
 				name="grad_heligame_cargoSpawn";
+				disableSimulation=1;
 			};
 			id=4997;
 			type="Land_HelipadSquare_F";
 			atlOffset=-9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item947
 		{
@@ -49565,6 +49590,29 @@ class Mission
 			};
 			id=4998;
 			type="PortableHelipadLight_01_yellow_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item948
 		{
@@ -49581,6 +49629,29 @@ class Mission
 			};
 			id=4999;
 			type="PortableHelipadLight_01_yellow_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item949
 		{
@@ -49598,6 +49669,29 @@ class Mission
 			id=5000;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=0.03545475;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item950
 		{
@@ -49615,6 +49709,29 @@ class Mission
 			id=5001;
 			type="PortableHelipadLight_01_yellow_F";
 			atlOffset=2.8610229e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item951
 		{
@@ -49631,6 +49748,29 @@ class Mission
 			};
 			id=5002;
 			type="PortableHelipadLight_01_red_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item952
 		{
@@ -49647,6 +49787,29 @@ class Mission
 			};
 			id=5003;
 			type="PortableHelipadLight_01_red_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item953
 		{
@@ -49663,6 +49826,29 @@ class Mission
 			};
 			id=5004;
 			type="PortableHelipadLight_01_red_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item954
 		{

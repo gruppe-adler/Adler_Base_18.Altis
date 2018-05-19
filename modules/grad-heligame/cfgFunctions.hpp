@@ -10,6 +10,7 @@ class grad_heligame {
         class cargoLz {};
         class cargoPickup {};
         class cleanUp {};
+        class endCargo {};
         class findLZ {};
         class initModule {postInit = 1;};
         class lz {};

@@ -21,7 +21,10 @@ _smokeColor = selectRandom
 
 // Smoke spawnen.
 _GRAD_lz_smoke = _smokeColor createVehicle _GRAD_lz_pos;
-_GRAD_lz_flare = _flareColor createVehicle (_GRAD_lz_pos vectorAdd [0,0,50]);
+if (daytime >= 19.5 && daytime <= 4.5) then {
+    _GRAD_lz_flare = _flareColor createVehicle (_GRAD_lz_pos vectorAdd [0,0,50]);
+};
+
 hint "Smoke is on the deck!";
 
 // Trigger erstellen, um den Smoke zu löschen
