@@ -26,7 +26,9 @@ _veh addMPEventHandler ["MPKilled", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
     (_unit getVariable "GRAD_MORTARGAME_MORTAR") removeEventHandler ["Fired", GRAD_MORTARGAME_EH];
     deleteVehicle _unit;
-    ["TaskSucceeded",["","Mortargame: Ziel zerstört!"]] remoteExecCall ["BIS_fnc_showNotification",_instigator,false];
+    if (local _killer) then {
+        ["TaskSucceeded",["","Mortargame: Ziel zerstört!"]] remoteExec ["BIS_fnc_showNotification",_killer,false];
+    };
 }];
 
 [600, [_veh], GRAD_MORTARGAME_EH, _mortar,player] call grad_mortargame_fnc_cleanUp;
