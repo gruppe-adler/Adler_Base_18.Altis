@@ -13,19 +13,23 @@ _pos = [_startPos,[100,3000], _dir, false] call grad_mortargame_fnc_findPos;
 if (isNil "_pos") exitWith {["No position found!"] call grad_mortargame_fnc_message;};
 
 private _veh = createVehicle ["C_Offroad_01_F", _pos, [], 0, "CAN_COLLIDE"];
-_veh addMPEventHandler ["MPKilled", {
-	params ["_unit", "_killer", "_instigator", "_useEffects"];
-    deleteVehicle _unit;
-    ["Ziel zerstört."] remoteExecCall ["grad_mortargame_fnc_message",_instigator,false];
-}];
+_veh setVariable ["GRAD_MORTARGAME_MORTAR", _mortar];
 GRAD_MORTARSHOTVEHICLE = _veh;
 
-_handle = _mortar addEventHandler ["Fired", {
+GRAD_MORTARGAME_EH = _mortar addEventHandler ["Fired", {
 	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
     _unit setAmmo [((weapons _unit)select 0), 1000000];
     [_projectile] call grad_mortargame_fnc_logPos;
 }];
-[600, [_veh], _handle, _mortar,player] call grad_mortargame_fnc_cleanUp;
+
+_veh addMPEventHandler ["MPKilled", {
+	params ["_unit", "_killer", "_instigator", "_useEffects"];
+    (_unit getVariable "GRAD_MORTARGAME_MORTAR") removeEventHandler ["Fired", GRAD_MORTARGAME_EH];
+    deleteVehicle _unit;
+    ["Ziel zerstört."] remoteExecCall ["grad_mortargame_fnc_message",_instigator,false];
+}];
+
+[600, [_veh], GRAD_MORTARGAME_EH, _mortar,player] call grad_mortargame_fnc_cleanUp;
 
 [_pos] call grad_mortargame_fnc_fiveLiner;
 MORTARSHOT_LASTPOS = [];
