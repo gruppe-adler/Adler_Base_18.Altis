@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=5360;
+		nextID=5379;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=301;
+		nextID=304;
 	};
 	class Camera
 	{
-		pos[]={23807.357,9.705864,16007.254};
-		dir[]={-0.026979594,-0.65615898,0.75425863};
-		up[]={-0.023458414,0.75457633,0.65579206};
-		aside[]={0.99944556,3.7161954e-008,0.035751201};
+		pos[]={23797.824,9.9809084,15978.336};
+		dir[]={0.54467815,-0.48831657,0.68196112};
+		up[]={0.30480421,0.87260753,0.38163081};
+		aside[]={0.7814346,-3.5576522e-007,-0.62412727};
 	};
 };
 binarizationWanted=0;
@@ -46247,8 +46247,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46257,10 +46257,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -46285,8 +46285,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46295,10 +46295,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};

@@ -21,7 +21,7 @@ private _mainStaticAction = ["GRAD_KillhouseStaticTarget", "Static Targets", "",
 private _basic = ["GRAD_KillhouseStaticTargetbasic", "Basic", "", {
     _target setVariable ["GRAD_KILLHOUSE_AKTIV",true,true];
     private _array = [1] call grad_killhouse_fnc_basic;
-    GRAD_Killhouse_Sign setObjectTextureGlobal [0,"modules\grad_killhouse\data\t"];
+    GRAD_Killhouse_Sign setObjectTextureGlobal [0,"modules\grad_killhouse\data\killhouse_besetzt.paa"];
     _target setVariable ["GRAD_KILLHOUSE_ITEMS",_array,true];
 },{!(_target getVariable ["GRAD_KILLHOUSE_AKTIV",false])}] call ace_interact_menu_fnc_createAction;
 
