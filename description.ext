@@ -46,14 +46,19 @@ class CfgGradVehicleSpawner {
 
 #undef MODULES_DIRECTORY
 class CfgFunctions {
-#include "modules\grad-customGear\cfgFunctions.hpp"
-#include "modules\grad-vehicleSpawner\cfgFunctions.hpp"
-#include "modules\grad_fireworks\cfgFunctions.hpp"
-//GRAD Heligame by Slant/McDiod
-#include "modules\grad-heligame\cfgFunctions.hpp"
-//GRAD Mortargame by Slant/Salbei
-#include "modules\grad-mortargame\cfgFunctions.hpp"
-#include "modules\grad-loadout\CfgFunctions.hpp"
+    #include "modules\grad-customGear\cfgFunctions.hpp"
+    #include "modules\grad-vehicleSpawner\cfgFunctions.hpp"
+    #include "modules\grad_fireworks\cfgFunctions.hpp"
+    #include "modules\grad-loadout\CfgFunctions.hpp"
+
+    //GRAD Heligame by Slant/McDiod
+    #include "modules\grad-heligame\cfgFunctions.hpp"
+
+    //GRAD Mortargame by Slant/Salbei
+    #include "modules\grad-mortargame\cfgFunctions.hpp"
+
+    //GRAD Killhouse by Slant/Salbei
+    #include "modules\grad_killhouse\cfgFunctions.hpp"
 };
 
 class grad_customGear {
@@ -79,7 +84,7 @@ class Loadouts {
 // GRAD Firework by Nomisum
 class cfgSounds
 {
-  #include "modules\grad_fireworks\cfgSounds.hpp"
+    #include "modules\grad_fireworks\cfgSounds.hpp"
 };
 
 // XiviD's notification für Arena und Base
