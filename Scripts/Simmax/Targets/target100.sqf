@@ -33,28 +33,25 @@ _targ_pip camCommit 0;
 _simpleTarget = _this select 0;
 
         //create invisible sphere to act as a camera
-        temp_PIPcam_Vehicle = createVehicle ["Sign_Sphere10cm_F", [0,0,0], [], 0, "CAN_COLLIDE"];
-		
+        temp_PIPcam_Vehicle = createVehicle ["Sign_Sphere25cm_F", [0,0,0], [], 0, "CAN_COLLIDE"];
+
         temp_PIPcam_Vehicle setObjectTexture [0,"#(argb,8,8,3)color(0,0,0,0)"];
 
-		
+
         //position and attach sphere to simpleTarget
-		
-		
+
+
         _pos = getPosATL _simpleTarget vectorAdd [-0.9, -0.9, 1];
-		
-		
-		
+
+
+
         temp_PIPcam_Vehicle setPos _pos;
         //_camPos = ([0,-1.2,-0.4]);
 	    _camPos = ([0,0,-1]);
-		
-		
+
+
         temp_PIPcam_Vehicle attachTo [_simpleTarget];
 
-        // create camera        
+        // create camera
         cam = ["rendertarget0",[[temp_PIPcam_Vehicle,_camPos],_simpleTarget],temp_PIPcam_Vehicle] call BIS_fnc_PIP;
         cam camCommit 0;
-	
-
-

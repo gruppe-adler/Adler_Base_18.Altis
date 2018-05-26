@@ -10,6 +10,7 @@ class grad_killhouse {
     class common {
         file = MODULES_DIRECTORY\grad_killhouse\functions\common;
         class addAction {};
+        class addEh {};
         class createObj {};
         class createTarget {};
         class lockDoors {};
