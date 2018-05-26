@@ -103,25 +103,40 @@ Dort siehst du alle Fahrzeuge die du bis jetzt gespawnt hast und kannst sie ankl
 direkt zu bemannen, klick auf den grünen MOUNT Button.<br/>
 <br/>
 Du kannst nur eine begrenzte Anzahl an Fahrzeugen spawnen. Wenn du zu viele Fahrzeuge spawnst, werden deine ältesten Fahrzeuge automatisch gelöscht. Außerdem werden deine Fahrzeuge auch gelöscht, wenn du sie
-eine Weile lang nicht benutzt, oder wenn sie beschädigt sind."
+eine Weile lang nicht benutzt, oder wenn sie beschädigt sind.",
+
 
 
 
 "Heligame",
 "Das Heligame startest du, indem du in einen Helikopter einsteigst und über das Mausradmenü das Heligame startest.<br/>
+<br/>
 Das Heligame gibt dir zwei Missionsziele: Entweder auf einer LZ landen oder ein Objekt vom Logistikpunkt zu einem Absetzpunkt zu slingen.<br/>
+<br/>
 In beiden Fällen wird dir der nächste Anflugpuntk auf der Karte markiert (mit deinem Namen). Sobald ein Missionsziel absolviert wurde, wird das nächste automatisch gespawned.<br/>
-Das Spiel beendet sich 10 Minuten nach dem letzten Missionsziel automatisch."
+<br/>
+Das Spiel beendet sich 10 Minuten nach dem letzten Missionsziel automatisch.",
+
+
+
 
 "Mortargame",
 "Das Mortargame startest du indem du auf der Mortarbase per ACE Interaktion auf einen der vier Mörser einen Feuerauftrag anforderst.<br/>
+<br/>
 Du bekommst daraufhin im ingame Chat eine 8-stellige Koordinate und die Höhe über dem Meeresspiegel mitgeteilt. Wenn der Zielpunkt besonders nah ist, wird das per 'Danger Close!' besonders angekündigt.<br/>
+<br/>
 Jetzt berechnest du die korrekte Feuerleitlösung und beginnst deinen Mörserbeschuss. Du bekommst wieder per Chat Feedback darüber, wie gut du geschossen hast und kannst deine Lösung entsprechend korrigieren.<br/>
-10 Minuten nach Erteilung des Feuerauftrages wird das Ziel und damit auch der Feuerauftrag gelöscht. Das Spiel ist damit beendet und du mußt manuell einen neuen Feuerauftrag anfordern um es ein erneutes Mal zu versuchen."
+<br/>
+10 Minuten nach Erteilung des Feuerauftrages wird das Ziel und damit auch der Feuerauftrag gelöscht. Das Spiel ist damit beendet und du mußt manuell einen neuen Feuerauftrag anfordern um es ein erneutes Mal zu versuchen.",
+
+
+
 
 "Killhouse",
 "Per ACE Interaktion auf das kleine Schild vor dem Eingang kannst du dir die gewünschte Konfiguration des Killhouses anfordern. Danach gehst du einfach rein und absolvierst den Kurs. Türen können optional verschlossen sein und müssen evtl. per Beschuss, Sprengsätze oder sonstige Methoden aufgebrochen werden. Auch diese Einstellung findet sich im gleichen ACE Interaktionsmenü.<br/>
+<br/>
 Beobachter können auf der Gangway oberhalb des Kurses mitgehen und das Vorgehen unten beobachten. Ein Runterfallen ist hier nicht möglich, also keine Sorge.<br/>
+<br/>
 ACHTUNG GEFAHR! Das Killhouse ist aus Holz gebaut! Kugeln durchschlagen Holz! Wenn Fireteams als Gruppe durchgehen, ist es ein Ausbildungsziel, Situational Awareness zu schärfen. Dazu gehört, dass man weiß, wo die eigenen Leute sind und sie nicht ausversehen durch die Wand erschiesst. Das ist ein Feature, kein Bug!"
 
 ]
