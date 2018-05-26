@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=307;
+		nextID=310;
 	};
 	class Camera
 	{
-		pos[]={14280.589,65.888016,16211.498};
-		dir[]={-0.55641538,-0.59228915,0.58277094};
-		up[]={-0.40902096,0.80571479,0.42839521};
-		aside[]={0.72328335,3.3226388e-007,0.69057155};
+		pos[]={14432.697,30.427971,15880.468};
+		dir[]={0.35362133,-0.80759585,0.4720042};
+		up[]={0.48422778,0.58972627,0.64633286};
+		aside[]={0.80032706,6.4400956e-007,-0.59959924};
 	};
 };
 binarizationWanted=0;
@@ -42956,7 +42956,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; }";
+				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Killhouse"",""scripts\simmax\SM_Teleporter.sqf"",[""killhouse"",0,320]]; }";
 				disableSimulation=1;
 			};
 			id=4623;
@@ -46247,8 +46247,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46257,10 +46257,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -46285,8 +46285,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46295,10 +46295,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
