@@ -34,6 +34,12 @@ class Extended_GetOut_EventHandlers {
         };
     };
 };
+
+class Extended_Killed_EventHandlers  {
+	class CAManBase {
+	   init = "params ['_u']; if (!isNil {grad_adlerBase_airVehicleUnits deleteAt (grad_adlerBase_airVehicleUnits find _u)}) then {publicVariable 'grad_adlerBase_airVehicleUnits'};";
+	};
+};
 // *****************
 
 class CfgGradVehicleSpawner {
