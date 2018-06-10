@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=5379;
+		nextID=5380;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=310;
+		nextID=313;
 	};
 	class Camera
 	{
-		pos[]={14432.697,30.427971,15880.468};
-		dir[]={0.35362133,-0.80759585,0.4720042};
-		up[]={0.48422778,0.58972627,0.64633286};
-		aside[]={0.80032706,6.4400956e-007,-0.59959924};
+		pos[]={15083.983,34.386803,14914.817};
+		dir[]={-0.6102792,-0.74101418,-0.28015757};
+		up[]={-0.67345285,0.67147708,-0.30915949};
+		aside[]={-0.41721046,-3.1921081e-007,0.90882498};
 	};
 };
 binarizationWanted=0;
@@ -3187,7 +3187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1294;
+		items=1295;
 		class Item0
 		{
 			dataType="Marker";
@@ -12409,7 +12409,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];" \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]]; " \n " " \n "}";
+				init="call{[this, ""Adler Base""] execVM ""scripts\simmax\TP_Setup.sqf""; " \n "}";
 				name="tele2";
 			};
 			id=3609;
@@ -26605,10 +26605,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15081.522,23.937704,14907.834};
-				angles[]={0,0.17675091,0};
+				position[]={15083.762,24.002707,14907.122};
+				angles[]={0,0.17675091,-0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -26616,7 +26617,7 @@ class Mission
 			};
 			id=4164;
 			type="Land_CampingTable_F";
-			atlOffset=81.033386;
+			atlOffset=0.063777924;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -42956,7 +42957,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Killhouse"",""scripts\simmax\SM_Teleporter.sqf"",[""killhouse"",0,320]]; }";
+				init="call{[this, ""Shooting Range""] execVM ""scripts\simmax\TP_Setup.sqf"";}";
 				disableSimulation=1;
 			};
 			id=4623;
@@ -43257,7 +43258,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];" \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Killhouse"",""scripts\simmax\SM_Teleporter.sqf"",[""killhouse"",0,320]]; " \n "}";
+				init="call{[this, ""Adler Base""] execVM ""scripts\simmax\TP_Setup.sqf""; " \n "}";
 				disableSimulation=1;
 			};
 			id=4630;
@@ -43578,7 +43579,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Killhouse"",""scripts\simmax\SM_Teleporter.sqf"",[""killhouse"",0,320]]; }";
+				init="call{[this, ""Indoor Range""] execVM ""scripts\simmax\TP_Setup.sqf""; " \n "}";
 				disableSimulation=1;
 			};
 			id=4636;
@@ -43879,7 +43880,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Killhouse"",""scripts\simmax\SM_Teleporter.sqf"",[""killhouse"",0,320]]; " \n "" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;}";
+				init="call{[this, ""USS Freedom""] execVM ""scripts\simmax\TP_Setup.sqf""; " \n "}";
 				disableSimulation=1;
 			};
 			id=4641;
@@ -46247,8 +46248,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46257,10 +46258,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -46285,8 +46286,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46295,10 +46296,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -49327,7 +49328,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];" \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Killhouse"",""scripts\simmax\SM_Teleporter.sqf"",[""killhouse"",0,320]];  " \n " " \n "}";
+				init="call{[this, ""Mortar Range""] execVM ""scripts\simmax\TP_Setup.sqf""; }";
 				disableSimulation=1;
 			};
 			id=4990;
@@ -55424,7 +55425,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Adler Base"",""scripts\simmax\SM_Teleporter.sqf"",[""Adler_Base"",0,220]];" \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Shooting Range"",""scripts\simmax\SM_Teleporter.sqf"",[""Shooting_Range"",0,50]]; " \n "" \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Indoor Range"",""scripts\simmax\SM_Teleporter.sqf"",[""CQB_Area"",0,320]];" \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - USS Freedom"",""scripts\simmax\SM_Teleporter.sqf"",[""USS_Freedom"",23,170]];" \n " " \n "this addAction [""<t color=""""#e60000"""">"" + ""Teleport - Mortar Range"",""scripts\simmax\SM_Teleporter.sqf"",[""mortar_range"",0,320]]; " \n "}";
+				init="call{[this, ""Killhouse""] execVM ""scripts\simmax\TP_Setup.sqf"";}";
 				disableSimulation=1;
 			};
 			id=5351;
@@ -55576,6 +55577,48 @@ class Mission
 								};
 							};
 							value="modules\grad_killhouse\data\killhouse_frei.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1294
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15083.33,24.598152,14907.297};
+				angles[]={0,0.15824901,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{_spawnLand = [14266.306,16212.634,0,303.876];" \n "_spawnLand = [14266.306,16212.634,0,303.876]; " \n "_spawnHeli = [15110.336,15008.938,23.5,282.367];" \n "_spawnPlane = [15076.33,14846.923,23.5,281.070];" \n "_spawnWater = [15031.51,14801.366,61.768,188.113]; " \n " " \n "[this,""Vehicle Spawner Carrier"",{true},[],[_spawnLand,_spawnLand,_spawnHeli,_spawnPlane,_spawnWater],{},{OWcam cameraEffect [""Internal"", ""Back"", ""OWCam1""]}] call grad_vehicleSpawner_fnc_addInteraction;}";
+				disableSimulation=1;
+			};
+			id=5379;
+			type="Land_Laptop_unfolded_F";
+			atlOffset=0.035327911;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="pics\VehicleSpawnerTEST.jpg";
 						};
 					};
 				};
