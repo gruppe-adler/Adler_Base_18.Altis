@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=5443;
+		nextID=5452;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=319;
+		nextID=322;
 	};
 	class Camera
 	{
-		pos[]={14791.706,35.507702,14798.252};
-		dir[]={0.068646073,-0.80015099,0.59607524};
-		up[]={0.091563895,0.59953785,0.79504514};
-		aside[]={0.99354541,3.3066608e-006,-0.1144106};
+		pos[]={12860.78,109.54348,16630.559};
+		dir[]={0.78682178,-0.076959081,0.6123684};
+		up[]={0.060734533,0.99703419,0.047268428};
+		aside[]={0.61419094,-3.9362931e-008,-0.78916353};
 	};
 };
 binarizationWanted=0;
@@ -3230,7 +3230,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1324;
+		items=1330;
 		class Item0
 		{
 			dataType="Marker";
@@ -46154,8 +46154,8 @@ class Mission
 						};
 						class Attribute2
 						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -46164,10 +46164,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="WhiteHead_01";
 								};
 							};
 						};
@@ -46192,8 +46192,8 @@ class Mission
 						};
 						class Attribute4
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="enableStamina";
+							expression="_this enablestamina _value;";
 							class Value
 							{
 								class data
@@ -46202,10 +46202,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WhiteHead_01";
+									value=0;
 								};
 							};
 						};
@@ -55521,16 +55521,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14824.936,12.008336,14843.421};
-						angles[]={6.2572002,0.080372527,0.0022375863};
+						position[]={14824.71,11.993649,14843.061};
+						angles[]={6.2571969,0.080372415,0.0022340214};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=5400;
 					type="B_UAV_AI";
+					atlOffset=67.232002;
 				};
 			};
 			class Attributes
@@ -55559,25 +55560,29 @@ class Mission
 				};
 			};
 			id=5398;
-			atlOffset=67.231659;
+			atlOffset=67.232002;
 		};
 		class Item1297
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14824.972,14.718105,14842.984};
-				angles[]={6.2572002,0.080372527,0.0022375863};
+				position[]={14824.972,14.718449,14842.984};
+				angles[]={6.2571969,0.080372415,0.0022340214};
 			};
 			side="West";
 			flags=2;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
+				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
 			};
 			id=5399;
 			type="B_Ship_Gun_01_F";
-			atlOffset=67.231659;
+			atlOffset=67.232002;
 		};
 		class Item1298
 		{
@@ -55591,8 +55596,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14823.653,10.429059,14826.472};
-						angles[]={0,0.08667855,0};
+						position[]={14823.384,10.427876,14826.439};
+						angles[]={0,0.086673051,0};
 					};
 					side="West";
 					flags=2;
@@ -55601,7 +55606,7 @@ class Mission
 					};
 					id=5403;
 					type="B_UAV_AI";
-					atlOffset=65.388969;
+					atlOffset=65.416;
 				};
 			};
 			class Attributes
@@ -55630,25 +55635,29 @@ class Mission
 				};
 			};
 			id=5401;
-			atlOffset=65.415817;
+			atlOffset=65.416;
 		};
 		class Item1299
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14823.515,11.793427,14826.378};
-				angles[]={0,0.08667855,0};
+				position[]={14823.515,11.79361,14826.378};
+				angles[]={0,0.086673051,0};
 			};
 			side="West";
 			flags=2;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
+				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
 			};
 			id=5402;
 			type="B_Ship_MRLS_01_F";
-			atlOffset=65.415817;
+			atlOffset=65.416;
 		};
 		class Item1300
 		{
@@ -55715,6 +55724,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -55759,17 +55769,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14815.13,19.121429,14728.381};
-						angles[]={0,3.2250342,0};
+						position[]={14814.89,19.133049,14728.403};
+						angles[]={0,3.2250369,0};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 					};
 					id=5409;
 					type="B_UAV_AI";
-					atlOffset=0.26749992;
+					atlOffset=0.011617661;
 				};
 			};
 			class Attributes
@@ -55798,20 +55808,21 @@ class Mission
 				};
 			};
 			id=5407;
-			atlOffset=0.011552811;
+			atlOffset=0.011617661;
 		};
 		class Item1303
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14815.13,21.625748,14728.331};
-				angles[]={0,3.2250342,0};
+				position[]={14815.129,21.625813,14728.33};
+				angles[]={0,3.2250369,0};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -55819,7 +55830,7 @@ class Mission
 			};
 			id=5408;
 			type="B_AAA_System_01_F";
-			atlOffset=0.011552811;
+			atlOffset=0.011617661;
 		};
 		class Item1304
 		{
@@ -55833,8 +55844,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14822.185,14.992605,14811.629};
-						angles[]={0,0.086934313,0};
+						position[]={14822.027,15.10476,14812.226};
+						angles[]={0,0.08693485,0};
 					};
 					side="West";
 					flags=6;
@@ -55843,6 +55854,7 @@ class Mission
 					};
 					id=5412;
 					type="B_UAV_AI";
+					atlOffset=0.11215496;
 				};
 			};
 			class Attributes
@@ -55871,20 +55883,21 @@ class Mission
 				};
 			};
 			id=5410;
-			atlOffset=0.11180019;
+			atlOffset=0.11215496;
 		};
 		class Item1305
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14822.185,16.747639,14811.579};
-				angles[]={0,0.086934313,0};
+				position[]={14822.185,16.747993,14811.579};
+				angles[]={0,0.08693485,0};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -55892,7 +55905,7 @@ class Mission
 			};
 			id=5411;
 			type="B_SAM_System_01_F";
-			atlOffset=0.11180019;
+			atlOffset=0.11215496;
 		};
 		class Item1306
 		{
@@ -55906,8 +55919,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15098.063,18.286213,16736.246};
-						angles[]={0.050623242,5.6596003,6.233892};
+						position[]={15098.26,18.259398,16735.816};
+						angles[]={0.050614551,5.6595964,6.2338972};
 					};
 					side="West";
 					flags=6;
@@ -55916,7 +55929,7 @@ class Mission
 					};
 					id=5418;
 					type="B_UAV_AI";
-					atlOffset=-9.3460083e-005;
+					atlOffset=-0.038999557;
 				};
 			};
 			class Attributes
@@ -55945,20 +55958,21 @@ class Mission
 				};
 			};
 			id=5416;
-			atlOffset=-0.03943634;
+			atlOffset=-0.038999557;
 		};
 		class Item1307
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15098.401,21.129269,16735.91};
-				angles[]={0.050623242,5.6596003,6.233892};
+				position[]={15098.401,21.129705,16735.91};
+				angles[]={0.050614551,5.6595964,6.2338972};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous true;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -55966,7 +55980,7 @@ class Mission
 			};
 			id=5417;
 			type="B_Radar_System_01_F";
-			atlOffset=-0.03943634;
+			atlOffset=-0.038999557;
 		};
 		class Item1308
 		{
@@ -55980,8 +55994,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15011.163,17.584576,16655.891};
-						angles[]={6.2765174,3.919992,0.0093286335};
+						position[]={15011.179,17.582794,16656.053};
+						angles[]={6.2765183,3.919992,0.0093200579};
 					};
 					side="West";
 					flags=6;
@@ -55990,6 +56004,7 @@ class Mission
 					};
 					id=5421;
 					type="B_UAV_AI";
+					atlOffset=-0.0030002594;
 				};
 			};
 			class Attributes
@@ -56018,27 +56033,29 @@ class Mission
 				};
 			};
 			id=5419;
-			atlOffset=-0.0034980774;
+			atlOffset=-0.0030002594;
 		};
 		class Item1309
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15011.143,21.40465,16655.977};
-				angles[]={6.2765174,3.919992,0.0093286335};
+				position[]={15011.143,21.405148,16655.977};
+				angles[]={6.2765183,3.919992,0.0093200579};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
+				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
 				aiRadarUsage=1;
 			};
 			id=5420;
 			type="B_SAM_System_03_F";
-			atlOffset=-0.0034980774;
+			atlOffset=-0.0030002594;
 		};
 		class Item1310
 		{
@@ -56104,6 +56121,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56177,6 +56195,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56251,6 +56270,7 @@ class Mission
 			flags=2;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56325,6 +56345,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56398,6 +56419,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56471,6 +56493,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56544,6 +56567,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
+				init="call{this setAutonomous false;}";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
@@ -56552,6 +56576,230 @@ class Mission
 			id=5441;
 			type="B_SAM_System_02_F";
 			atlOffset=0.036287308;
+		};
+		class Item1324
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12809.745,87.674225,16658.211};
+						angles[]={6.2805333,4.4755816,6.2791886};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=5444;
+					type="B_UAV_AI";
+					atlOffset=7.6293945e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=5444;
+						item1=5445;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=5443;
+			atlOffset=-0.0066070557;
+		};
+		class Item1325
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12809.891,90.544144,16658.012};
+				angles[]={6.2805333,4.4755816,6.2791886};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{this setAutonomous true;}";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=5445;
+			type="B_Radar_System_01_F";
+			atlOffset=-0.0066070557;
+		};
+		class Item1326
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15398.824,77.653671,19227.01};
+						angles[]={0.034652505,4.9166145,6.272521};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=5447;
+					type="B_UAV_AI";
+					atlOffset=-0.039001465;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=5447;
+						item1=5448;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=5446;
+			atlOffset=-0.039001465;
+		};
+		class Item1327
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15398.854,80.529259,19227.059};
+				angles[]={0.034652505,4.9166145,6.272521};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{this setAutonomous true;}";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=5448;
+			type="B_Radar_System_01_F";
+			atlOffset=-0.039001465;
+		};
+		class Item1328
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18068.113,79.655937,16645.221};
+						angles[]={0.019996032,0.51890677,6.247201};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=5450;
+					type="B_UAV_AI";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=5450;
+						item1=5451;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=5449;
+			atlOffset=-0.02040863;
+		};
+		class Item1329
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18068.07,82.522026,16644.918};
+				angles[]={0.019996032,0.51890677,6.247201};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				init="call{this setAutonomous true;}";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=5451;
+			type="B_Radar_System_01_F";
+			atlOffset=-0.02040863;
 		};
 	};
 	class Connections
