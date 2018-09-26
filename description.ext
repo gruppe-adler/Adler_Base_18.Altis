@@ -130,8 +130,6 @@ class CfgNotifications
   };
 };
 
-=======
-
 // Legt Einstellungen für die automatische Leichen- und Wrack-Müllabfuhr fest.
 corpseManagerMode = 1;                                                          // Leichen aufräumen (0/1)
 corpseLimit = 1;                                                                // Schwellenwert an Leichen, ab dem die corpseRemovalMinTime benutzt wird
