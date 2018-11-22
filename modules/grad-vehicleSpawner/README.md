@@ -47,8 +47,9 @@ maxVehiclesUser | 5             | Threshold of total vehicles per user, after wh
 
 ```sqf
 class cfgGradVehicleSpawner {
-    maxVehicles = 100;
     abandonedTime = 1500;
+    maxVehicles = 100;
+    maxVehiclesUser = 10;
 };
 ```
 
@@ -73,16 +74,23 @@ eventParams    | Any - Additional parameters that are passed to onDisplayOpen an
 Spawnpositions have to be in order: [Wheeled,Tracked,Rotary Wing,Fixed Wing,Naval]  
 Allowed data types are:
 
-* Array - format Pos2D, Pos3D or [x,y,z,direction] - PosATL is used to find spawn positions
 * String - markername - direction of marker determines spawn direction
 * Object - vehicles will spawn on or around given object - object direction determines spawn direction
-
+* Array - format Pos2D, Pos3D, [x,y,z,direction,searchRadius,increment] or array of multiple position in that format (will be prioritized in the same order as given)
+    * x,y - x and y coordinates
+    * z (optional) - z above terrain (default: 0)
+    * direction (optional) - direction in which vehicles will spawn here, 0 is most reliable (default: 0)
+    * searchRadius (optional) - radius around this position which will be searched for available empty spawn positions (make this small to force exact position; default: 20)
+    * increment (optional) - the smaller this is, the slower the function, but the more likely the vehicle will spawn close to center (default: 5)
+* Code - Has to return [Pos3d,Direction]. Position [0,0,0] will mean no valid position was found. Params passed are [class of vehicle].
+    * if you want to use `list _trigger` to check for any objects which might block a spawn, make sure to filter `objNull` as well as `grad_vehicleSpawner_target` and `grad_vehicleSpawner_localVeh`, which are a helper object and the local vehicle preview
 
 ### Example
 
 ```sqf
-_spawnLand = [3200,1200,0];  // Wheeled and tracked will use same spawn position
-_spawnAir = [3500,1600,0,128];  // spawndirection is 128 >> in direction of runway
+_spawnLand = [3200,1200,0];
+_spawnTracked = [[2500,1200,0,0,5,1],[2600,1200,0,0,5,1]];  // tracked vehicles will spawn max 5m from the first position - if first position is full, second position will be used
+_spawnAir = [3500,1600,0,128];  // spawndirection is 128 >> in direction of my imaginary runway
 
 [
     _laptop,
