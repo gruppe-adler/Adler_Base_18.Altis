@@ -28,11 +28,11 @@ for [{_i=0},{_i<count grad_adlerBase_contentData},{_i=_i+2}] do {
     _prevWordCount = [_diffHash,_headline] call CBA_fnc_hashGet;
     if (_prevWordCount < 0) then {
         grad_adlerBase_contentData set [_i,format ["Neu: %1",_headline]];
-        if (_changedID < 0) then {_changedID = _i};
+        if (_changedID < 0) then {_changedID = _i/2};
     } else {
         if (_prevWordCount != (count _text)) then {
-            grad_adlerBase_contentData set [_i,format ["%1 (Änderungen)",_headline]];
-            if (_changedID < 0) then {_changedID = _i};
+            grad_adlerBase_contentData set [_i,format ["%1 (NEU)",_headline]];
+            if (_changedID < 0) then {_changedID = _i/2};
         };
     };
 

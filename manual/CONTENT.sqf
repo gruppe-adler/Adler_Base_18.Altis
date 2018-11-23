@@ -92,7 +92,11 @@ und Mitspracherecht bei unseren Entscheidungen.",
 
 
 "Vehicle Spawner",
-"Zu deiner Linken siehst du drei Laptops. An diesen Laptops kannst du Fahrzeuge, Flugzeuge, Helikopter und Boote bestellen.<br/>
+"--------------------------------------------------------------------------------------------------------------------------------<br/>
+Neu: Am Vehicle Spawner kannst du jetzt das Loadout von Flugzeugen und Helikoptern editieren.<br/>
+--------------------------------------------------------------------------------------------------------------------------------<br/>
+<br/>
+Zu deiner Linken siehst du drei Laptops. An diesen Laptops kannst du Fahrzeuge, Flugzeuge, Helikopter und Boote bestellen.<br/>
 <br/>
 In der Vehicler Spawner Oberfläche kannst du links oben die gewünschte Kategorie auswählen. Such dir dann ein Fahrzeug aus der Liste aus und klicke es an. Es wird dir eine lokale Vorschau angezeigt.
 Oben rechts siehst du Informationen über das Fahrzeug, sowie mittig rechts aus welchem Mod das Fahrzeug stammt. Wenn du oben rechts auf das Puzzlesymbol klickst kannst du je nach Fahrzeugtyp einige
