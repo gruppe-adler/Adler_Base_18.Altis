@@ -14,7 +14,7 @@ private _selVehicle = _myVehicles select _selID;
 grad_vehicleSpawner_selVeh = _selVehicle;
 [_selVehicle] call grad_vehicleSpawner_fnc_setCamTarget;
 
-[] call grad_vehicleSpawner_fnc_deletePreview;
+[nil,false] call grad_vehicleSpawner_fnc_deletePreview;
 
 private _vehClass = typeOf _selVehicle;
 private _cfg = configFile >> "CfgVehicles" >> _vehClass;
@@ -22,6 +22,7 @@ private _cfg = configFile >> "CfgVehicles" >> _vehClass;
 [] call grad_vehicleSpawner_fnc_updateInformation;
 [] call grad_vehicleSpawner_fnc_updateAnimationList;
 [] call grad_vehicleSpawner_fnc_updateTexturesList;
+[] call grad_vehicleSpawner_fnc_updatePylonsList;
 
 private _display = uiNamespace getVariable ["grad_vehicleSpawner_display",displayNull];
 {

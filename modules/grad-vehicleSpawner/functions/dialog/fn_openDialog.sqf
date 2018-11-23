@@ -1,4 +1,4 @@
-#include "component.hpp"
+ #include "component.hpp"
 
 #include "..\..\dialog\defines.hpp"
 
@@ -9,6 +9,8 @@ params [["_vehiclesTypes",[]],["_spawnPositions",[]],["_onDisplayOpen",{}],["_on
 if (!isNull (missionNamespace getVariable ["grad_vehicleSpawner_cam",objNull])) exitWith {};
 grad_vehicleSpawner_cam = "camera" camcreate (getPos player);
 grad_vehicleSpawner_cam cameraeffect ["External","back"];
+if (sunOrMoon < 0.35) then {camUseNVG true; grad_vehicleSpawner_camUseNVG = true} else {grad_vehicleSpawner_camUseNVG = false};
+
 showCinemaBorder false;
 grad_vehicleSpawner_camProperties = [10,45,20,[0,0,-0.8]];
 
@@ -43,6 +45,11 @@ _cgRight ctrlSetPosition [safeZoneX + safeZoneW - SIDEBAR_W,safeZoneY,SIDEBAR_W,
 _cgRight ctrlSetFade SIDEBAR_FADE;
 _cgRight ctrlCommit 0;
 
+private _ctrlMessage = _display ctrlCreate ["grad_vehicleSpawner_rscText",IDC_MESSAGE];
+_ctrlMessage ctrlSetPosition [safeZoneX + SIDEBAR_W,safeZoneY,safeZoneW - 2 * SIDEBAR_W,BUTTON_H];
+_ctrlMessage ctrlSetFade 1;
+_ctrlMessage ctrlCommit 0;
+
 [_display,_cgLeft,_cgRight] call grad_vehicleSpawner_fnc_createBackground;
 [_display,_cgLeft] call grad_vehicleSpawner_fnc_createSelectionList;
 [_display,_cgRight] call grad_vehicleSpawner_fnc_createVehicleContext;
@@ -53,7 +60,15 @@ _cgRight ctrlCommit 0;
 [_display] call grad_vehicleSpawner_fnc_updateMyVehiclesInfo;
 
 
-[controlNull,0] call grad_vehicleSpawner_fnc_onSelectionTabChanged;
+private _defaultCategorySelection = switch (true) do {
+    case ("ALL" in _vehiclesTypes || count _vehiclesTypes == 0 || "ALLWHEELED" in _vehiclesTypes): {0};
+    case ("ALLTRACKED" in _vehiclesTypes): {1};
+    case ("ALLHELIS" in _vehiclesTypes): {2};
+    case ("ALLPLANES" in _vehiclesTypes): {3};
+    case ("ALLBOATS" in _vehiclesTypes): {4};
+    default {0};
+};
+[controlNull,_defaultCategorySelection] call grad_vehicleSpawner_fnc_onSelectionTabChanged;
 [controlNull,0] call grad_vehicleSpawner_fnc_onContextTabChanged;
 
 _display setVariable ["grad_vehicleSpawner_onDisplayClose",_onDisplayClose];
