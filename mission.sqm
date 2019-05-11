@@ -44,7 +44,6 @@ addons[]=
 	"ace_compat_rhs_usf3",
 	"ace_optics",
 	"tfar_handhelds",
-	"ARC_Units",
 	"ace_medical",
 	"ace_attach",
 	"ace_chemlights",
@@ -225,8 +224,9 @@ class AddonsMetaData
 		};
 		class Item12
 		{
-			className="ARC_Units";
-			name="ARC_Units";
+			className="tfar_handhelds";
+			name="tfar_handhelds";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
 		class Item13
 		{
@@ -3290,7 +3290,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3319,7 +3319,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3386,7 +3386,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=171;
@@ -3510,7 +3510,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3539,7 +3539,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3606,7 +3606,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=173;
@@ -3730,7 +3730,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3759,7 +3759,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3826,7 +3826,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=175;
@@ -3950,7 +3950,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -3979,7 +3979,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4046,7 +4046,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=177;
@@ -4170,7 +4170,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4199,7 +4199,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4266,7 +4266,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=179;
@@ -4390,7 +4390,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4419,7 +4419,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4486,7 +4486,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=181;
@@ -4610,7 +4610,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4639,7 +4639,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4706,7 +4706,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=183;
@@ -4830,7 +4830,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4859,7 +4859,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -4926,7 +4926,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=185;
@@ -5050,7 +5050,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5079,7 +5079,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5146,7 +5146,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=187;
@@ -5270,7 +5270,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5299,7 +5299,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5366,7 +5366,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=189;
@@ -5488,7 +5488,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5517,7 +5517,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5584,7 +5584,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=191;
@@ -5706,7 +5706,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5735,7 +5735,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5802,7 +5802,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=193;
@@ -5924,7 +5924,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -5953,7 +5953,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6020,7 +6020,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=195;
@@ -6144,7 +6144,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6173,7 +6173,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6240,7 +6240,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=197;
@@ -6364,7 +6364,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6393,7 +6393,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6460,7 +6460,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=199;
@@ -6593,7 +6593,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6622,7 +6622,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6689,7 +6689,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=473;
@@ -6811,7 +6811,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6840,7 +6840,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -6907,7 +6907,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=475;
@@ -7029,7 +7029,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7058,7 +7058,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7125,7 +7125,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=477;
@@ -7247,7 +7247,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7276,7 +7276,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7343,7 +7343,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=479;
@@ -7465,7 +7465,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7494,7 +7494,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7561,7 +7561,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=481;
@@ -7706,7 +7706,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7735,7 +7735,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7802,7 +7802,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=483;
@@ -7924,7 +7924,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -7953,7 +7953,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8020,7 +8020,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=485;
@@ -8144,7 +8144,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8173,7 +8173,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8240,7 +8240,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=487;
@@ -8364,7 +8364,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8393,7 +8393,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8460,7 +8460,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=489;
@@ -8582,7 +8582,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8611,7 +8611,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8678,7 +8678,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=491;
@@ -8800,7 +8800,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8829,7 +8829,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -8896,7 +8896,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=493;
@@ -9018,7 +9018,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9047,7 +9047,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9114,7 +9114,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=495;
@@ -9236,7 +9236,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9265,7 +9265,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9332,7 +9332,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=497;
@@ -9454,7 +9454,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9483,7 +9483,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9550,7 +9550,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=499;
@@ -9672,7 +9672,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9701,7 +9701,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9768,7 +9768,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=501;
@@ -9890,7 +9890,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9919,7 +9919,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -9986,7 +9986,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=503;
@@ -10148,7 +10148,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10177,7 +10177,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10244,7 +10244,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=505;
@@ -10366,7 +10366,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10395,7 +10395,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -10462,7 +10462,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=507;
@@ -46398,7 +46398,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -46433,7 +46433,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -46512,7 +46512,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=4829;
@@ -46655,7 +46655,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -46684,7 +46684,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -46751,7 +46751,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=4833;
@@ -47684,7 +47684,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="ARC_GER_Flecktarn_Uniform";
+								typeName="SMM_Uniform_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -47713,7 +47713,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="ARC_GER_Flecktarn_PlateCarrier_2";
+								typeName="SMM_Vest_BW_FT";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -47780,7 +47780,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="ARC_GER_Flecktarn_Helmet_simple";
+							headgear="SMM_Helmet_BW_FT";
 						};
 					};
 					id=4912;
