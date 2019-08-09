@@ -1,11 +1,36 @@
 {
+  "_from": "grad-heligame@^1.0.0",
+  "_id": "grad-heligame@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-6ZK+i4YtLhBgFCQ9aeD8SnnHcF0u24KUOF8D2wy8k4cAKEPmDoIK/2TpFd4QzvkDK9+7A1zUiDIxs8YMb2LYbA==",
+  "_location": "/grad-heligame",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "grad-heligame@^1.0.0",
     "name": "grad-heligame",
-    "contributors": [
-        {
-            "name": "Slant",
-            "name": "McDiod"
-        }
-    ],
-    "description": "adds minigame to helis to practice landings and take-off",
-    "version": "0.0.1"
+    "escapedName": "grad-heligame",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/grad-heligame/-/grad-heligame-1.0.0.tgz",
+  "_shasum": "98e4349549fdadacb88c153383489e6576c1a7be",
+  "_spec": "grad-heligame@^1.0.0",
+  "_where": "/home/fusselwurm/dev/misc/Adler_Base_18.Altis",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "AdlerSalbei"
+    }
+  ],
+  "deprecated": false,
+  "description": "adds minigame to helis to practice landings and take-off",
+  "name": "grad-heligame",
+  "version": "1.0.0"
 }
