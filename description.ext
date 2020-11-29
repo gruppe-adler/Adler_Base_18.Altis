@@ -65,6 +65,17 @@ class CfgFunctions {
 
     //GRAD Killhouse by Slant/Salbei
     #include "modules\grad_killhouse\cfgFunctions.hpp"
+
+    class grad_portal {
+        class portal {
+            file = Scripts\portal;
+            class setUpPortal {};
+            class startTeleportPfh {};
+            class triggerCondition {};
+            class triggerOn {};
+            class triggerOff {};
+        };
+    };
 };
 
 class grad_customGear {
