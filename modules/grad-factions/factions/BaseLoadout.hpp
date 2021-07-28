@@ -44,7 +44,7 @@ class BaseLoadout {
     };
 	class Rank {
         class LIEUTENANT {
-            headgear = "grad_beret_red";
+            headgear = "grad_extras_beret_red";
         };
     };
 };
