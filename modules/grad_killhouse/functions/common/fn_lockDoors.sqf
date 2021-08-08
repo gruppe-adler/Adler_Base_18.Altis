@@ -9,7 +9,7 @@ private _lockDoors = {
 private _doorArray = [];
 
 {
-    if ((typeOf _x) == "Land_Shoot_House_Wall_Door_F") then {
+    if ((typeOf _x) == "grad_extras_shootHouseDoor") then {
         _doorArray pushBack _x;
     };
 }forEach _array;
