@@ -74,6 +74,7 @@ class CfgFunctions {
             class triggerCondition {};
             class triggerOn {};
             class triggerOff {};
+            class setLoadout {};
         };
     };
 };
