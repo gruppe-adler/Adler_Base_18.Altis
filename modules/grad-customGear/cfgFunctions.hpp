@@ -1,5 +1,5 @@
 #ifndef MODULES_DIRECTORY
-    #define MODULES_DIRECTORY modules
+    #define MODULES_DIRECTORY node_modules
 #endif
 
 #define PROJECT_NAME grad-customGear
