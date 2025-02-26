@@ -3,6 +3,6 @@
     "version": "1.0.0",
     "dependencies": {
         "grad-customGear": "^1.0.0",
-        "grad-heligame": "^1.0.0"
+        "grad-heligame": "^1.0.1"
     }
 }
